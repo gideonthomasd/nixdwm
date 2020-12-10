@@ -53,3 +53,7 @@ cd ..
 ######################################
 
 cp bashrc ~/.bashrc
+cd dwm-6.2
+cp testwallpaper ~/dwm-6.2
+cp sxhkd ~/dwm-6.2
+cd ..
