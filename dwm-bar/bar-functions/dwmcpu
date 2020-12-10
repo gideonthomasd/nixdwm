@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+dwmcpu () {
+  read cpu a b c previdle rest < /proc/stat
+  prevtotal=$((a+b+c+previdle))
+  sleep 0.2
+  read cpu a b c idle rest < /proc/stat
+  total=$((a+b+c+idle))
+  cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+  
+  icon="  "
+  
+  printf "%s %s" "$SEP1^c#CC99FF^"$icon"^c#FF9999^ "$cpu"%$SEP2"
+  
+}
+dwmcpu

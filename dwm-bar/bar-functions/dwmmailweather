@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+  dwmmailweather () {
+  	
+	username="p"
+	password="r"
+	
+	oldtime=$(cat /home/phil/dwm-bar/bar-functions/epochtime)
+	current=$(date +%s)
+
+	passed=$[current - oldtime]
+	icon=" "
+	
+	icon2=" "
+	
+	
+if [ $passed -gt 300 ]
+then
+mailcount=$(curl -u $username:$password --silent "https://mail.google.com/mail/feed/atom" |  grep -oPm1 "(?<=<fullcount>)[^<]+")
+weather=$(curl wttr.in/Caerphilly?format="%l+%C+%f" 2>/dev/null | cut -d' ' -f2-)
+	
+printf "%s %s %s" "$SEP1^c#99CCFF^"$icon"^c#FFFFFF^ "$mailcount"$SEP2""$SEP1^c#FF99CC^"$icon2"^c#99CCFF^ "$weather"$SEP2"
+date +%s > /home/phil/dwm-bar/bar-functions/epochtime
+echo $mailcount > /home/phil/dwm-bar/bar-functions/mail_no
+echo $weather > /home/phil/dwm-bar/bar-functions/weather
+else
+mailcount=$(cat /home/phil/dwm-bar/bar-functions/mail_no)
+weather=$(cat /home/phil/dwm-bar/bar-functions/weather)
+printf "%s %s %s" "$SEP1^c#99CCFF^"$icon"^c#FFFFFF^ "$mailcount"$SEP2""$SEP1^c#FF99CC^"$icon2"^c#99CCFF^ "$weather"$SEP2"
+fi
+
+}
+dwmmailweather

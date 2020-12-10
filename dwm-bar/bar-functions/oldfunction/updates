@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#updates=0
+updates () {
+    oldtime=$(cat /home/phil/dwm-bar/bar-functions/epochtime_updates)
+
+	current=$(date +%s)
+
+	passed=$[current - oldtime]
+
+if [ $passed -gt 600 ]
+then
+actualupdates=$(checkupdates | wc -l)
+echo $actualupdates > /home/phil/dwm-bar/bar-functions/updates_file
+date +%s > /home/phil/dwm-bar/bar-functions/epochtime_updates
+printf "%s %s" " "$actualupdates" |"
+else
+origupdates=$(cat /home/phil/dwm-bar/bar-functions/updates_file)
+printf "%s %s" " "$origupdates" |"
+fi
+#printf "$SEP2"
+}
+updates

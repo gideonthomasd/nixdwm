@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+dwmtime () {
+time=$(date +'%H:%M:%S')
+
+icon="  "
+
+printf "%s %s" "$SEP1^c#ff99CC^"$icon"^c#99FF99^ "$time"$SEP2"
+
+}
+dwmtime

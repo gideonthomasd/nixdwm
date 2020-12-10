@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+dwmram () {
+	MEMUSED=$(free -h | awk '(NR == 2) {print $3}')
+    MEMTOT=$(free -h |awk '(NR == 2) {print $2}')
+    
+    icon="  "
+    
+    printf "%s %s" "$SEP1^c#99FF99^"$icon"^c#FFFF99^ "$MEMUSED"/"$MEMTOT"$SEP2"
+	
+		
+
+}
+dwmram

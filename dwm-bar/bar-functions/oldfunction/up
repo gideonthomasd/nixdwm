@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+#sudo ip link show to get network
+up () {
+#rx1=$(cat /sys/class/net/e*/statistics/rx_bytes)
+tx1=$(cat /sys/class/net/e*/statistics/tx_bytes)
+sleep 0.25s
+#rx2=$(cat /sys/class/net/e*/statistics/rx_bytes)
+tx2=$(cat /sys/class/net/e*/statistics/tx_bytes)
+
+#received=$[rx2-rx1]
+transmitted=$[tx2-tx1]
+#received=$[received * 2]
+transmitted=$[transmitted * 4]
+#received=$(echo "scale=0; $received/1000" | bc)
+transmitted=$(echo "scale=0; $transmitted/1000" | bc)
+
+#index_R=KB
+index_T=KB
+
+#if [ $received -gt 1000 ]
+#then
+#received=$(echo "scale=2; $received/1000" | bc)
+#index_R=MB
+#fi
+
+if [ $transmitted -gt 1000 ]
+then
+transmitted=$(echo "scale=2; $transmitted/1000" | bc)
+index_T=MB
+fi
+
+#received=$(echo $received $index_R)
+transmitted=$(echo " $transmitted $index_T")
+
+#printf "^c#FF007F^^c#FFFF00^ "$transmitted
+
+printf  "%s %s" "  ^c#FF007F^^c#FFFF00^   "$transmitted
+printf "%s\n" "$SEP2"
+}
+up
