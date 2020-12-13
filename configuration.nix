@@ -38,8 +38,8 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
-    font = "Lat2-Terminus16";
-    keyMap = "uk";
+     font = "Lat2-Terminus16";
+     keyMap = "uk";
   };
 
   
@@ -49,111 +49,110 @@
   services.xserver.xkbOptions = "eurosign:e";
 
   # Enable CUPS to print documents.
-   services.printing.enable = true;
-   services.printing.drivers = [ pkgs.brlaser ];
+  services.printing.enable = true;
+  services.printing.drivers = [ pkgs.brlaser ];
 
-	services.xserver.enable = true;
-	services.xserver.displayManager.lightdm.enable = true;
-services.xserver.desktopManager.xfce.enable = true;
-services.xserver.desktopManager.xfce.noDesktop = true;
-services.xserver.desktopManager.xfce.enableXfwm = false;
+  services.xserver.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.desktopManager.xfce.noDesktop = true;
+  services.xserver.desktopManager.xfce.enableXfwm = false;
 
-nixpkgs.overlays = [
-  (self: super: {
-     dwm = super.dwm.overrideAttrs (_: {
-       src = builtins.fetchGit https://github.com/gideonthomasd/mydwm.git;
-     });
-  })
-  #(self: super: {
-   #  slstatus = super.slstatus.overrideAttrs (_: {
-   #    src = builtins.fetchGit https://github.com/gideonthomasd/myslstatus.git;
-    # });
-  #})
+  nixpkgs.overlays = [
+	(self: super: {
+		dwm = super.dwm.overrideAttrs (_: {
+	src = builtins.fetchGit https://github.com/gideonthomasd/mydwm.git;
+	});
+ })
+ ];
+ 
+ services.xserver.displayManager.defaultSession = "none+dwm";
+ services.xserver.windowManager.dwm.enable = true;
+ 
+ #####i3#################################
+
+ boot.supportedFilesystems = [ "ntfs" ];
+
+ environment.pathsToLink = [ "/libexec" ];
+ services.xserver.windowManager.i3 = {
+ enable = true;
+ extraPackages = with pkgs; [
+	i3status
+	i3blocks
+	];
+	};
+services.xserver.windowManager.i3.package = pkgs.i3-gaps;	
+
+######Fonts##############################
+fonts.fonts = with pkgs; [
+noto-fonts
+cantarell-fonts
+google-fonts
+noto-fonts-emoji
+(nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+
 ];
+########## bspwm ###########
+services.xserver.windowManager.bspwm = {
+enable = true;
+
+
+};
+########## openbox ##########
+services.xserver.windowManager.openbox.enable = true;
 
 
 
-
-#nixpkgs.overlays = [
-#  (self: super: {
- #    slstatus = super.slstatus.overrideAttrs (_: {
- #      src = builtins.fetchGit https://github.com/gideonthomasd/myslstatus.git;
- #    });
- # })
-#];
-
-	services.xserver.displayManager.defaultSession = "none+dwm";
-	services.xserver.windowManager.dwm.enable = true;
-##	#services.xserver.windowManager.dwm.extraPackages = with pkgs; [
-##	#	dmenu
-##	#	st
-##	#	termite
-##	#];
-
-#environment.systemPackages = with pkgs; [
-
-
-#];
-boot.supportedFilesystems = [ "ntfs" ];
+#xsession.windowManager.bspwm.startupPrograms = [ "sxhkd -c /home/phil/.config/bspwm/sxhkdrc" ];
 
   # Enable sound.
-   sound.enable = true;
-   hardware.pulseaudio.enable = true;
+ sound.enable = true;
+ hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.phil= {
-  
-
+  users.users.phil = {
      isNormalUser = true;
-    extraGroups = [ "wheel" "phil" ]; # Enable ‘sudo’ for the user.
-   };
-
+     extraGroups = [ "wheel" "phil" ]; # Enable ‘sudo’ for the user.
+  };
+  
+  nixpkgs.config.allowUnfree = true;
+  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-   #environment.systemPackages = with pkgs; [
-   
-   #slstatus
-   
-   #(slstatus.overrideAttrs (oldAttrs: rec {
-#configFile = writeText "config.def.h" (builtins.readFile /home/phil/myslstatus/config.h);
-#postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
-#}))
-
-nixpkgs.config.allowUnfree = true;
-
-#networking.wireless.enable = true;
-
-#services.avahii.enable = true;
-#services.avahi.hostname = "alocal";
-#avahi = {
-#enable = true;
-#nssmdns = true;
-#};
-
-environment.systemPackages = with pkgs; [ 
-#slstatus
-(slstatus.overrideAttrs (_: { src = /home/phil/myslstatus; })) 
+  environment.systemPackages = with pkgs; [
      wget vim
-     git
      firefox
-     termite
-     pcmanfm
-     xfce.thunar
-     xfce.thunar-volman
-     gvfs
-     jgmenu
-     xcompmgr
-     sxhkd
-     clipit
-     feh
-     lxappearance
-     dmenu
-     lxtask
-     mfcj6510dwlpr
-   ];
+git
+geany
+termite
+pcmanfm
+xfce.thunar
+xfce.thunar-volman
+gvfs
+jgmenu
+xcompmgr
+sxhkd
+clipit
+feh
+lxappearance
+dmenu
+lxtask
+rofi
+mfcj6510dwlpr
+bspwm
+openbox
+tint2
+xarchiver
+openbox-menu
+menumaker
+xterm
+plank
+obconf
+unzip
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
