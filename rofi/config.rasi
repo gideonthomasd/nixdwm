@@ -1,7 +1,7 @@
 configuration {
         modi: "window,run,ssh,combi,drun";
         combi-modi: "window,drun";
-        font: "Hack 12";
+        font: "Sans Regular 12";
         terminal: "termite";
         /*theme: "gorgeHousse"; */
 
@@ -135,4 +135,5 @@ configuration {
 /*      me-accept-entry: "MouseD1";*/
 /*      me-accept-custom: "Control+MouseD1";*/
 }
-@import "/usr/share/rofi/themes/Monokai.rasi"
+
+@import "/nix/store/r5vhw3hck63x8lvdh8z9xyibddd1ypds-rofi-1.5.4/share/rofi/themes/DarkBlue.rasi"
