@@ -2,7 +2,7 @@
 
 stay_alive           = 1
 #hide_on_startup     = 0
-csv_cmd              = pmenu
+#csv_cmd              = pmenu
 tint2_look           = 1
 at_pointer           = 0
 terminal_exec        = termite
@@ -27,8 +27,8 @@ sub_spacing         = 5
 #sub_padding_bottom  = -1
 #sub_padding_left    = -1
 sub_hover_action     = 1
-
-#item_margin_x       = 3
+#5
+#item_margin_x       = 35
 item_margin_y        = 5
 item_height          = 30
 item_padding_x       = 8
@@ -38,7 +38,7 @@ item_border          = 0
 
 sep_height           = 5
 
-font                 = Roboto 14px
+font                 = Roboto Regular 17px
 #font_fallback       = xtg
 icon_size            = 0
 #icon_text_spacing   = 10

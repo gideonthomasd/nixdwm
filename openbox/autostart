@@ -1,0 +1,6 @@
+#Autostart file
+
+tint2 &
+plank &
+xcompmgr &
+~/.config/openbox/testwallpaper &
