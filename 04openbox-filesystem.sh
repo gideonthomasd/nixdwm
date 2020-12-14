@@ -6,12 +6,12 @@ chmod +x testwallpaper
 cd ..
 
 mkdir -p ~/.config/tint2
-cp tintrc ~/.config/tint2
+cp tint2rc ~/.config/tint2
 
 mkdir -p ~/.config/openbox
 cd openbox
 cp -r * ~/.config/openbox
-cd..
+cd ..
 
 mkdir -p ~/.config/plank/dock1/launchers
 cd plank
