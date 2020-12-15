@@ -22,3 +22,13 @@ mkdir -p ~/.themes
 cd themes
 cp -r * ~/.themes
 cd ..
+
+mkdir -p ~/.local/bin
+
+mkdir -p ~/succader
+cd ~/succader
+git clone https://github.com/domsson/succade
+cd succade
+./build-inih
+cd bin
+cp succade ~/.local/bin
