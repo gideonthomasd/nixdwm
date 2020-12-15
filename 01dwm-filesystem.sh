@@ -2,6 +2,11 @@
 
 ### Change to executables ############
 
+cd jgmenu
+chmod +x logoff.sh
+cd ..
+
+
 cd dwm-bar
 chmod +x dwm_bar.sh
 cd bar-functions
