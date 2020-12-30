@@ -1,0 +1,120 @@
+#
+## Menu generated with fbmenugen v0.85
+#
+
+[begin] (Fluxbox)
+[encoding] {UTF-8}
+  [exec] (File Manager) {thunar} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (Terminal) {xterm} </home/phil/.config/fbmenugen/icons/61cf66fb108d88d03fa6e833701a6ffe.png>
+  [exec] (Web Browser) {xdg-open http://} </home/phil/.config/fbmenugen/icons/84a500b5c59f4a942841f75a0e9d3f86.png>
+  [exec] (Run command) {fbrun} </home/phil/.config/fbmenugen/icons/44f9290c0e08e01f1cdd8b21572975e2.png>
+[separator]
+[submenu] (Accessories) </home/phil/.config/fbmenugen/icons/24282a4d5ad2cd729ae64c60192d2931.png>
+  [exec] (About Xfce) {xfce4-about} </home/phil/.config/fbmenugen/icons/5eaa8ba03c10c86794d6492274fde0ff.png>
+  [exec] (Application Finder) {xfce4-appfinder} </home/phil/.config/fbmenugen/icons/40c4f4e2ed4abdd89b3a5b4fca6b47de.png>
+  [exec] (Bulk Rename) {/nix/store/argly5f5j52vn621ib3n3z8hsd82ymdn-thunar-1.8.15/lib/Thunar/ThunarBulkRename} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (ClipIt) {clipit} </home/phil/.config/fbmenugen/icons/da676b6edc610eb5ebf5d71503f9ce95.png>
+  [exec] (File Manager PCManFM) {pcmanfm} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (File Manager) {exo-open --launch FileManager} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (Mousepad) {mousepad} </home/phil/.config/fbmenugen/icons/ef47bfea4b7040a333cec3dcb64b850f.png>
+  [exec] (Plank) {plank} </home/phil/.config/fbmenugen/icons/4d9ad092def8b88589c1b4086f48d8dc.png>
+  [exec] (Run Program...) {xfce4-appfinder --collapsed} </home/phil/.config/fbmenugen/icons/44f9290c0e08e01f1cdd8b21572975e2.png>
+  [exec] (Screenshot) {xfce4-screenshooter} </home/phil/.config/fbmenugen/icons/24365e853c6f2d3a786ab3b1be5a77b1.png>
+  [exec] (Task Manager) {xfce4-taskmanager} </home/phil/.config/fbmenugen/icons/24282a4d5ad2cd729ae64c60192d2931.png>
+  [exec] (Terminal Emulator) {exo-open --launch TerminalEmulator} </home/phil/.config/fbmenugen/icons/61cf66fb108d88d03fa6e833701a6ffe.png>
+  [exec] (Thunar File Manager) {thunar} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (Xarchiver) {xarchiver} </home/phil/.config/fbmenugen/icons/c0e313668ac5405ad7439fcb373029c7.png>
+[end]
+[submenu] (Development) </home/phil/.config/fbmenugen/icons/ef47bfea4b7040a333cec3dcb64b850f.png>
+  [exec] (Geany) {geany} </home/phil/.config/fbmenugen/icons/2cfc43bccc0d64a2993dc061f33740ab.png>
+[end]
+[submenu] (Graphics) </home/phil/.config/fbmenugen/icons/21123266477be17cb6d55e9b080dbdad.png>
+  [exec] (Ristretto Image Viewer) {ristretto} </home/phil/.config/fbmenugen/icons/fa675505595cbff51efd4d3aa8f072ed.png>
+[end]
+[submenu] (Multimedia) </home/phil/.config/fbmenugen/icons/a0d4731ad32c71b1547cdf662e7af76d.png>
+  [exec] (Parole Media Player) {parole} </home/phil/.config/fbmenugen/icons/a0d4731ad32c71b1547cdf662e7af76d.png>
+  [exec] (PulseAudio Volume Control) {pavucontrol} </home/phil/.config/fbmenugen/icons/b492db32012b3339b38165b11427737d.png>
+[end]
+[submenu] (Network) </home/phil/.config/fbmenugen/icons/84a500b5c59f4a942841f75a0e9d3f86.png>
+  [exec] (Firefox) {firefox} </home/phil/.config/fbmenugen/icons/4d29a4b284237c02e3dccb95f9e7d3d6.png>
+  [exec] (Mail Reader) {exo-open --launch MailReader} </home/phil/.config/fbmenugen/icons/c39894aab27c5e90f3478db838ebdc85.png>
+  [exec] (Web Browser) {exo-open --launch WebBrowser} </home/phil/.config/fbmenugen/icons/84a500b5c59f4a942841f75a0e9d3f86.png>
+[end]
+[submenu] (Settings) </home/phil/.config/fbmenugen/icons/91beb8ebaf3483bbddaede4db185dc1f.png>
+  [exec] (Accessibility) {xfce4-accessibility-settings} </home/phil/.config/fbmenugen/icons/9ca64c907f0a328d25eb0424bf3153da.png>
+  [exec] (Advanced Network Configuration) {nm-connection-editor} </home/phil/.config/fbmenugen/icons/febd9c143246c094d52f2c335a0ba272.png>
+  [exec] (Appearance) {xfce4-appearance-settings} </home/phil/.config/fbmenugen/icons/c3ac23bdc0fa7012d04fb4a69cd62e97.png>
+  [exec] (Customise Look and Feel) {lxappearance} </home/phil/.config/fbmenugen/icons/c3ac23bdc0fa7012d04fb4a69cd62e97.png>
+  [exec] (Desktop Preferences) {pcmanfm --desktop-pref} </home/phil/.config/fbmenugen/icons/7fb9061f5a4cae27e28e937fe93d6731.png>
+  [exec] (Display) {xfce4-display-settings} </home/phil/.config/fbmenugen/icons/9dba8e575233d935cadc493ccb6946e5.png>
+  [exec] (File Manager Settings) {thunar-settings} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (Keyboard) {xfce4-keyboard-settings} </home/phil/.config/fbmenugen/icons/388a64058ab96508c0990144c28abfff.png>
+  [exec] (MIME Type Editor) {xfce4-mime-settings} </home/phil/.config/fbmenugen/icons/3c70be69df795f51169ec81fafe0cac3.png>
+  [exec] (Mouse and Touchpad) {xfce4-mouse-settings} </home/phil/.config/fbmenugen/icons/491b22a58dbcb3b77e33a0800327bc78.png>
+  [exec] (Openbox Configuration Manager) {obconf} </home/phil/.config/fbmenugen/icons/634367ddefaa080bdeceb3ca9fb99c39.png>
+  [exec] (Panel Manager) {tint2conf} </home/phil/.config/fbmenugen/icons/f4d194993896479390e57572bb019487.png>
+  [exec] (Power Manager) {xfce4-power-manager-settings} </home/phil/.config/fbmenugen/icons/3256cfd1dbe98226b72e458d54bd7c7e.png>
+  [exec] (Preferred Applications) {exo-preferred-applications} </home/phil/.config/fbmenugen/icons/41b6f220265f91ffdae82ce81c7b2b3c.png>
+  [exec] (Removable Drives and Media) {thunar-volman-settings} </home/phil/.config/fbmenugen/icons/d595347969fa1efbe0315985252fff56.png>
+  [exec] (Session and Startup) {xfce4-session-settings} </home/phil/.config/fbmenugen/icons/acf0569caf2a652148757ff62e9f94a3.png>
+  [exec] (Settings Editor) {xfce4-settings-editor} </home/phil/.config/fbmenugen/icons/47e4e17127635755578971d4efb2f5aa.png>
+  [exec] (Settings Manager) {xfce4-settings-manager} </home/phil/.config/fbmenugen/icons/47e4e17127635755578971d4efb2f5aa.png>
+  [exec] (Xfce Terminal) {xfce4-terminal --preferences} </home/phil/.config/fbmenugen/icons/61cf66fb108d88d03fa6e833701a6ffe.png>
+[end]
+[submenu] (System) </home/phil/.config/fbmenugen/icons/2f6b01dd0b402bbcb6f8bc7f1b584acc.png>
+  [exec] (Bulk Rename) {/nix/store/argly5f5j52vn621ib3n3z8hsd82ymdn-thunar-1.8.15/lib/Thunar/ThunarBulkRename} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (File Manager PCManFM) {pcmanfm} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (jgmenu) {jgmenu_run} </home/phil/.config/fbmenugen/icons/b70e739e03925f58c8341d7b26a4120f.png>
+  [exec] (Log Out) {xfce4-session-logout} </home/phil/.config/fbmenugen/icons/5c163abfcd8f26f46ea30181c603a05d.png>
+  [exec] (Manage Printing) {xdg-open http://localhost:631/} </home/phil/.config/fbmenugen/icons/b3db7e5aa0d1dc797ce0a87f2ecff1b9.png>
+  [exec] (NixOS Manual) {/nix/store/r1cbb52gpsnyxzpr8dy1xaqi413n3m2l-nixos-help/bin/nixos-help} </home/phil/.config/fbmenugen/icons/c3b73add6a35819976e45cc0290e1b4b.png>
+  [exec] (Task Manager) {lxtask} </home/phil/.config/fbmenugen/icons/24282a4d5ad2cd729ae64c60192d2931.png>
+  [exec] (Task Manager) {xfce4-taskmanager} </home/phil/.config/fbmenugen/icons/24282a4d5ad2cd729ae64c60192d2931.png>
+  [exec] (Termite) {termite} </home/phil/.config/fbmenugen/icons/61cf66fb108d88d03fa6e833701a6ffe.png>
+  [exec] (Thunar File Manager) {thunar} </home/phil/.config/fbmenugen/icons/0f54f6437af7365cca448a7cde4b05c5.png>
+  [exec] (Tint2) {tint2} </home/phil/.config/fbmenugen/icons/5730c91d0d4438b0f972dd8c03f9d2b6.png>
+  [exec] (Xfce Terminal) {xfce4-terminal} </home/phil/.config/fbmenugen/icons/61cf66fb108d88d03fa6e833701a6ffe.png>
+  [exec] (XTerm) {xterm} </home/phil/.config/fbmenugen/icons/61cf66fb108d88d03fa6e833701a6ffe.png>
+[end]
+[separator]
+[submenu] (Advanced Settings) </home/phil/.config/fbmenugen/icons/f456f69622f271271e523296a3b66ad4.png>
+  [exec] (Conky RC) {geany ~/.conkyrc} </home/phil/.config/fbmenugen/icons/929e9e1abae461c4fa43a8f2c7947c92.png>
+  [exec] (Tint2 Panel) {geany ~/.config/tint2/tint2rc} </home/phil/.config/fbmenugen/icons/929e9e1abae461c4fa43a8f2c7947c92.png>
+[submenu] (Fbmenugen) </home/phil/.config/fbmenugen/icons/ef47bfea4b7040a333cec3dcb64b850f.png>
+  [exec] (Menu Schema) {geany ~/.config/fbmenugen/schema.pl} </home/phil/.config/fbmenugen/icons/929e9e1abae461c4fa43a8f2c7947c92.png>
+  [exec] (Menu Config) {geany ~/.config/fbmenugen/config.pl} </home/phil/.config/fbmenugen/icons/929e9e1abae461c4fa43a8f2c7947c92.png>
+[separator]
+  [exec] (Generate a menu with icons) {fbmenugen -i} </home/phil/.config/fbmenugen/icons/ef47bfea4b7040a333cec3dcb64b850f.png>
+  [exec] (Generate a menu without icons) {fbmenugen -g} </home/phil/.config/fbmenugen/icons/ef47bfea4b7040a333cec3dcb64b850f.png>
+[separator]
+  [exec] (Refresh cache) {fbmenugen -d} </home/phil/.config/fbmenugen/icons/9218bd69b6ffbdd53c2b615b3391b4a5.png>
+[end]
+[submenu] (Fluxbox) </home/phil/.config/fbmenugen/icons/47e4e17127635755578971d4efb2f5aa.png>
+[config] (Configure)
+[submenu] (System Styles) {Choose a style...}
+  [stylesdir] (/nix/store/7hrjss7yjkmhd4x0jb31d3n40dynbl0h-fluxbox-1.3.7/share/fluxbox/styles)
+[end]
+[submenu] (User Styles) {Choose a style...}
+  [stylesdir] (~/.fluxbox/styles)
+[end]
+[workspaces] (Workspace List)
+[submenu] (Tools)
+  [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg}
+  [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png}
+  [exec] (Run) {fbrun}
+  [exec] (Regen Menu) {/nix/store/7hrjss7yjkmhd4x0jb31d3n40dynbl0h-fluxbox-1.3.7/bin/fluxbox-generate_menu}
+[end]
+[commanddialog] (Fluxbox Command)
+  [reconfig] (Reload config)
+  [restart] (Restart)
+  [exec] (About) {(/nix/store/7hrjss7yjkmhd4x0jb31d3n40dynbl0h-fluxbox-1.3.7/bin/fluxbox -v; /nix/store/7hrjss7yjkmhd4x0jb31d3n40dynbl0h-fluxbox-1.3.7/bin/fluxbox -info | /nix/store/mgkwf0c30x2xdw98nh7kj40n83wwv9sf-gnused-4.8/bin/sed 1d) | /nix/store/wzr4z8hsz9c6xw37wn73d1bxx6an8h92-xmessage-1.0.5/bin/xmessage -file - -center}
+  [separator]
+  [exit] (Exit)
+[end]
+[end]
+[separator]
+  [exec] (Refresh) {/nix/store/ifayp0kvijq0n4x0bv51iqrb0yzyz77g-perl-5.32.0/bin/perl \/nix\/store\/jlh826apawhxvpahawblys9z41f1b2hv\-perl5\.32\.0\-fbmenugen\-0\.85\/bin\/\.fbmenugen\-wrapped -i -S \/home\/phil\/\.config\/fbmenugen\/schema\.pl -C \/home\/phil\/\.config\/fbmenugen\/config\.pl -o \/home\/phil\/\.fluxbox\/menu} </home/phil/.config/fbmenugen/icons/9218bd69b6ffbdd53c2b615b3391b4a5.png>
+[exit] (Exit) </home/phil/.config/fbmenugen/icons/8720f37c5aedb31d574e0bf415a1875b.png>
+
+[endencoding]
+[end]
