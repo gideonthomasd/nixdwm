@@ -1,0 +1,33 @@
+XTerm*termName: xterm-256color
+XTerm*vt100.background: #000000
+XTerm*vt100.color0: #333366
+XTerm*vt100.color1: #6666CC
+XTerm*vt100.color10:    #00CCFF
+XTerm*vt100.color11:    #6699FF
+XTerm*vt100.color12:    #0099CC
+XTerm*vt100.color13:    #0099FF
+XTerm*vt100.color14:    #66CCCC
+XTerm*vt100.color15:    #CCFFFF
+XTerm*vt100.color2: #0099CC
+XTerm*vt100.color3: #3366CC
+XTerm*vt100.color4: #006699
+XTerm*vt100.color5: #0066FF
+XTerm*vt100.color6: #669999
+XTerm*vt100.color7: #99CCCC
+XTerm*vt100.color8: #333399
+XTerm*vt100.color9: #9999FF
+XTerm*vt100.colorMode:  true
+XTerm*vt100.faceName:   Liberation Mono
+XTerm*vt100.faceSize:   12
+XTerm*vt100.foreground: #F5FFCC
+XTerm*vt100.geometry:   100x24+0+30
+XTerm*vt100.on2Clicks:  line
+XTerm*vt100.rightScrollBar: true
+XTerm*vt100.saveLines:  2000
+Xft.dpi:    96
+Xft.antialias:  1
+Xft.hintstyle:  hintfull
+Xft.rgba:   none
+Xcursor.theme:  
+Xcursor.size:   0
+Xcursor.theme_core: 1
