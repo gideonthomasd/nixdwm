@@ -1,0 +1,69 @@
+INCLUDE = "vars"
+Rootmenu = "PekWM" {
+Entry = "Brave" { Actions = "Exec brave &" }
+Entry = "Termite" { Actions = "Exec termite &" }
+Entry = "Firefox" { Actions = "Exec firefox &" }
+Entry = "xfce4-terminal" { Actions = "Exec xfce4-terminal &" }
+Entry = "Filemanager" { Actions = "Exec thunar &" }
+
+Separator {}
+Entry = "Bluetooth" { Actions = "Exec blueman-manager &" }
+Entry = "Steam" { Actions = "Exec flatpak run com.valvesoftware.Steam &" }
+Entry = "Zoom" { Actions = "Exec flatpak run us.zoom.Zoom &" }
+
+
+Separator {}
+
+INCLUDE = "/home/phil/.pekwm/appsmenu"
+
+Separator {}
+
+    Submenu = "PekWM" {
+        Entry = "Reload" { Actions = "Reload" }
+        Entry = "Restart" { Actions = "Restart" }
+        Separator {}
+        Entry = "Exit" { Actions = "Exit" }
+    }
+WindowMenu = "Window Menu" {
+    Entry = "(Un)Stick" { Actions = "Toggle Sticky" }
+    Entry = "(Un)Shade" { Actions = "Toggle Shaded" }
+    Submenu = "Maximize" {
+        Entry = "Full" { Actions = "Toggle Maximized True True" }
+        Entry = "Horizontal" { Actions = "Toggle Maximized True False" }
+        Entry = "Vertical" { Actions = "Toggle Maximized False True" }
+    }
+    Submenu = "Fill" {
+        Entry = "Full" { Actions = "MaxFill True True" }
+        Entry = "Horizontal" { Actions = "MaxFill True False" }
+        Entry = "Vertical" { Actions = "MaxFill False True" }
+    }
+    Submenu = "Stacking" {
+        Entry = "Raise " { Actions = "Raise" }
+        Entry = "Lower" { Actions = "Lower" }
+        Entry = "Always On Top " { Actions = "Toggle AlwaysOnTop" }
+        Entry = "Always Below" { Actions = "Toggle AlwaysBelow" }
+    }
+    Submenu = "Decor" {
+        Entry = "Decor" { Actions = "Toggle DecorBorder; Toggle DecorTitlebar" }
+        Entry = "Border" { Actions = "Toggle DecorBorder" }
+        Entry = "Titlebar" { Actions = "Toggle DecorTitlebar" }
+    }
+    Submenu = "Skip" {
+        Entry = "Menus" { Actions = "Toggle Skip Menus" }
+        Entry = "Focus Toggle" { Actions = "Toggle Skip FocusToggle" }
+        Entry = "Snap" { Actions = "Toggle Skip Snap" }
+    }
+    Entry = "Iconify " { Actions = "Set Iconified" }
+    Entry = "Manual Action" { Actions = "ShowCmdDialog" }
+    Separator {}
+    Entry = "Close" { Actions = "Close" }
+    Entry = "Kill " { Actions = "Kill " }
+}    
+    
+    
+    
+}
+
+
+   
+

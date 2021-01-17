@@ -1,0 +1,19 @@
+INCLUDE = "$_PEKWM_ETC_PATH/config_system"
+
+Files {
+   Theme = "~/.pekwm/themes/Menda"
+#   Theme = "~/.pekwm/themes/SONA-Red"
+#     Theme = "~/.pekwm/themes/graphyte"
+#     Theme = "~/.pekwm/themes/Shiki-brave"
+#     Theme = "~/.pekwm/themes/Shiki-wine"
+}
+
+Screen {
+    Workspaces = "3"
+    WorkspacesPerRow = "3"
+    WorkspaceNames = "01;02;03"
+
+    Placement {
+        Model = "CenteredOnParent Smart MouseNotUnder"
+    }
+}

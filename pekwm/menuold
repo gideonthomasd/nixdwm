@@ -1,0 +1,139 @@
+Rootmenu = "/" {
+    Submenu = "Development" {
+        Entry = "Geany" { Actions = "Exec geany &" }
+        Entry = "IDLE (Python IDE)" { Actions = "Exec idle &" }
+        Entry = "Python" { Actions = "Exec xterm -e python &" }
+        Entry = "Python (v2.7)" { Actions = "Exec xterm -e python2.7 &" }
+    }
+    Submenu = "Editors" {
+        Entry = "Mousepad" { Actions = "Exec mousepad &" }
+        Entry = "Nano" { Actions = "Exec xterm -e nano &" }
+        Entry = "Vi" { Actions = "Exec xterm -e vi &" }
+        Entry = "Vim" { Actions = "Exec xterm -e vim &" }
+    }
+    Submenu = "Graphics" {
+        Entry = "Ristretto Image Viewer" { Actions = "Exec ristretto &" }
+    }
+    Submenu = "Multimedia" {
+        Entry = "ALSA mixer" { Actions = "Exec xterm -e alsamixer &" }
+        Entry = "mpv Media Player" { Actions = "Exec mpv --player-operation-mode=pseudo-gui &" }
+        Entry = "Parole Media Player" { Actions = "Exec parole &" }
+        Entry = "PulseAudio Volume Control" { Actions = "Exec pavucontrol &" }
+        Entry = "VLC media player" { Actions = "Exec vlc &" }
+        Entry = "VLC media player" { Actions = "Exec qvlc &" }
+    }
+    Submenu = "Network" {
+        Entry = "Brave Web Browser" { Actions = "Exec brave &" }
+        Entry = "FireFox" { Actions = "Exec firefox &" }
+        Entry = "Mail Reader" { Actions = "Exec exo-open --launch MailReader &" }
+        Entry = "TkVNC" { Actions = "Exec xterm -e tkvnc &" }
+        Entry = "Web Browser" { Actions = "Exec exo-open --launch WebBrowser &" }
+        Entry = "Zoom" { Actions = "Exec zoom-us &" }
+    }
+    Submenu = "Office" {
+        Entry = "Document Viewer" { Actions = "Exec evince &" }
+    }
+    Submenu = "Shells" {
+        Entry = "File Manager PCManFM" { Actions = "Exec pcmanfm &" }
+        Entry = "GIT" { Actions = "Exec xterm -e git &" }
+        Entry = "Termite" { Actions = "Exec termite &" }
+        Entry = "Thunar File Manager" { Actions = "Exec thunar &" }
+        Entry = "Xfce Terminal" { Actions = "Exec xfce4-terminal &" }
+        Entry = "Xterm" { Actions = "Exec xterm &" }
+    }
+    Submenu = "System" {
+        Submenu = "Settings" {
+            Submenu = "GNOME" {
+                Entry = "Advanced Network Configuration" { Actions = "Exec nm-connection-editor &" }
+            }
+            Submenu = "Xfce" {
+                Entry = "Settings Manager" { Actions = "Exec xfce4-settings-manager &" }
+            }
+            Entry = "Accessibility" { Actions = "Exec xfce4-accessibility-settings &" }
+            Entry = "Appearance" { Actions = "Exec xfce4-appearance-settings &" }
+            Entry = "Customize Look and Feel" { Actions = "Exec lxappearance &" }
+            Entry = "Desktop Preferences" { Actions = "Exec pcmanfm --desktop-pref &" }
+            Entry = "Display" { Actions = "Exec xfce4-display-settings &" }
+            Entry = "File Manager Settings" { Actions = "Exec thunar-settings &" }
+            Entry = "Keyboard" { Actions = "Exec xfce4-keyboard-settings &" }
+            Entry = "Manage Printing" { Actions = "Exec xdg-open http://localhost:631/ &" }
+            Entry = "MIME Type Editor" { Actions = "Exec xfce4-mime-settings &" }
+            Entry = "Mouse and Touchpad" { Actions = "Exec xfce4-mouse-settings &" }
+            Entry = "Openbox Configuration Manager" { Actions = "Exec obconf &" }
+            Entry = "Power Manager" { Actions = "Exec xfce4-power-manager-settings &" }
+            Entry = "Preferred Applications" { Actions = "Exec exo-preferred-applications &" }
+            Entry = "Removable Drives and Media" { Actions = "Exec thunar-volman-settings &" }
+            Entry = "Session and Startup" { Actions = "Exec xfce4-session-settings &" }
+            Entry = "Settings Editor" { Actions = "Exec xfce4-settings-editor &" }
+            Entry = "Tint2 Settings" { Actions = "Exec tint2conf &" }
+            Entry = "Xfce Terminal" { Actions = "Exec xfce4-terminal --preferences &" }
+        }
+        Entry = "Bulk Rename" { Actions = "Exec /nix/store/argly5f5j52vn621ib3n3z8hsd82ymdn-thunar-1.8.15/lib/Thunar/ThunarBulkRename &" }
+        Entry = "jgmenu" { Actions = "Exec jgmenu_run &" }
+        Entry = "Log Out" { Actions = "Exec xfce4-session-logout &" }
+        Entry = "NixOS Manual" { Actions = "Exec nixos-help &" }
+        Entry = "Task Manager" { Actions = "Exec lxtask &" }
+        Entry = "Task Manager" { Actions = "Exec xfce4-taskmanager &" }
+        Entry = "Tint2" { Actions = "Exec tint2 &" }
+        Entry = "Top" { Actions = "Exec xterm -e top &" }
+    }
+    Submenu = "Utilities" {
+        Entry = "About Xfce" { Actions = "Exec xfce4-about &" }
+        Entry = "Application Finder" { Actions = "Exec xfce4-appfinder &" }
+        Entry = "balenaEtcher" { Actions = "Exec etcher &" }
+        Entry = "ClipIt" { Actions = "Exec clipit &" }
+        Entry = "File Manager" { Actions = "Exec exo-open --launch FileManager &" }
+        Entry = "Info" { Actions = "Exec xterm -e info &" }
+        Entry = "Plank" { Actions = "Exec plank &" }
+        Entry = "Run Program..." { Actions = "Exec xfce4-appfinder --collapsed &" }
+        Entry = "Screenshot" { Actions = "Exec xfce4-screenshooter &" }
+        Entry = "Terminal Emulator" { Actions = "Exec exo-open --launch TerminalEmulator &" }
+        Entry = "Xarchiver" { Actions = "Exec xarchiver &" }
+        Entry = "Xrefresh" { Actions = "Exec xrefresh &" }
+        Entry = "Xsetroot" { Actions = "Exec xsetroot &" }
+    }
+    Separator {}
+    Submenu = "PekWM" {
+        Entry = "Reload" { Actions = "Reload" }
+        Entry = "Restart" { Actions = "Restart" }
+        Separator {}
+        Entry = "Exit" { Actions = "Exit" }
+    }
+}
+
+WindowMenu = "Window Menu" {
+    Entry = "(Un)Stick" { Actions = "Toggle Sticky" }
+    Entry = "(Un)Shade" { Actions = "Toggle Shaded" }
+    Submenu = "Maximize" {
+        Entry = "Full" { Actions = "Toggle Maximized True True" }
+        Entry = "Horizontal" { Actions = "Toggle Maximized True False" }
+        Entry = "Vertical" { Actions = "Toggle Maximized False True" }
+    }
+    Submenu = "Fill" {
+        Entry = "Full" { Actions = "MaxFill True True" }
+        Entry = "Horizontal" { Actions = "MaxFill True False" }
+        Entry = "Vertical" { Actions = "MaxFill False True" }
+    }
+    Submenu = "Stacking" {
+        Entry = "Raise " { Actions = "Raise" }
+        Entry = "Lower" { Actions = "Lower" }
+        Entry = "Always On Top " { Actions = "Toggle AlwaysOnTop" }
+        Entry = "Always Below" { Actions = "Toggle AlwaysBelow" }
+    }
+    Submenu = "Decor" {
+        Entry = "Decor" { Actions = "Toggle DecorBorder; Toggle DecorTitlebar" }
+        Entry = "Border" { Actions = "Toggle DecorBorder" }
+        Entry = "Titlebar" { Actions = "Toggle DecorTitlebar" }
+    }
+    Submenu = "Skip" {
+        Entry = "Menus" { Actions = "Toggle Skip Menus" }
+        Entry = "Focus Toggle" { Actions = "Toggle Skip FocusToggle" }
+        Entry = "Snap" { Actions = "Toggle Skip Snap" }
+    }
+    Entry = "Iconify " { Actions = "Set Iconified" }
+    Entry = "Manual Action" { Actions = "ShowCmdDialog" }
+    Separator {}
+    Entry = "Close" { Actions = "Close" }
+    Entry = "Kill " { Actions = "Kill " }
+}
+
