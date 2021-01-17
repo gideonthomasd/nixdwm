@@ -18,6 +18,11 @@ cd plank
 cp -r * ~/.config/plank/dock1/launchers
 cd ..
 
+mkdir -p ~/.config/plank/dock2/launchers
+cd plank2
+cp -r * ~/.config/plank/dock2/launchers
+cd ..
+
 mkdir -p ~/.themes
 cd themes
 cp -r * ~/.themes
