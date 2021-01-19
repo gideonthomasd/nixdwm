@@ -1,6 +1,6 @@
 [bar]
 name = "testbar"
-blocks = "desktop | mail cpu ram weather | switch date time"
+blocks = "desktop cpu | mail ram weather | switch date time"
 height = 32
 areas = 16
 foreground = "#FFFF99"
@@ -8,7 +8,7 @@ background = "#000000"
 line-color = "#555555"
 # "#555555"
 line-width = 2
-font = "Cantarell:size=14"
+font = "Monospace:size=14"
 #affix-font = "Font Awesome 5 Free-Solid:size=16"
 #affix-font = "Font Awesome 5 Brands-Regular:size=16"
 affix-font = "Font Awesome 5 Free-Regular:size=16"
