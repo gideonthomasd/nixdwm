@@ -21,6 +21,7 @@ cd ..
 
 cd dwm-6.2
 chmod +x testwallpaper
+chmod +x killjgmenu
 cd ..
 
 ### COPY FONTS #######################
@@ -65,4 +66,5 @@ cp bashrc ~/.bashrc
 cd dwm-6.2
 cp testwallpaper ~/dwm-6.2d
 cp sxhkdrc ~/dwm-6.2d
+cp killjgmenu ~/dwm-6.2d
 cd ..
