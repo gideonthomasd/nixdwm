@@ -11,7 +11,7 @@ sxhkd -c /home/phil/.config/bspwm/sxhkdrc &
 ~/.config/bspwm/testwallpaper &
 
 setxkbmap gb &
-lxpolkit &
+#lxpolkit &
 xcompmgr -c &
 
 #$HOME/.config/polybar/launch.sh
