@@ -6,7 +6,7 @@
   read cpu a b c idle rest < /proc/stat
   total=$((a+b+c+idle))
   cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
-  icon='%'
+  icon='pc'
   #printf "%s %s" "$icon ""$cpu%" 
   #echo $icon $cpu
   #echo '#FF0000'
