@@ -21,3 +21,4 @@ fbpanel -p abcpekwm &
 xcompmgr &
 plank -n dock2 &
 ~/.pekwm/testwallpaper &
+sxhkd -c /home/phil/.pekwm/sxhkdrc &
