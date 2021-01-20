@@ -4,5 +4,7 @@ NOTE: Configuration uses mydwm files - not dwm-6.2 here. NOTE: BEFORE USING NIXO
 
 Do chmod +x *.sh 
 
-Reboot. Win + Enter = terminal; win + p = dmenu; win + w = close
-Change filesystem.sh to executable (chmod +x filesystem.sh) and run.
+Then run the files 01 ->
+
+{Reboot. Win + Enter = terminal; win + p = dmenu; win + w = close
+Change filesystem.sh to executable (chmod +x filesystem.sh) and run.}
