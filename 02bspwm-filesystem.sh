@@ -26,6 +26,8 @@ cd bspwm
 cp -r * ~/.config/bspwm
 cd ..
 
+cp stalonetrayrc ~/.stalonetrayrc
+
 cd succade
 cp -r * ~/.config/succade
 cd ..
