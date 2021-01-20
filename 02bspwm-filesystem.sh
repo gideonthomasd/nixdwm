@@ -3,6 +3,7 @@
 cd bspwm
 chmod +x bspwmrc
 chmod +x testwallpaper
+chmod +x sta
 cd ..
 
 cd succade
