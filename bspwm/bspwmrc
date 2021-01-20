@@ -17,6 +17,7 @@ xcompmgr -c &
 #$HOME/.config/polybar/launch.sh
 ######PATH not set yet############
 ~/.local/bin/succade &
+~/.config/bspwm/sta &
 
 bspc monitor -d I II III IV V
 
