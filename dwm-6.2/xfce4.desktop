@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=jgmenu
+Exec=/home/phil/dwm-6.2d/killjgmenu
+Icon=jgmenu
+StartupNotify=true
+Terminal=false
+Comment=Displays menu for launching installed applications
