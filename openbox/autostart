@@ -4,3 +4,4 @@ tint2 &
 plank &
 xcompmgr &
 ~/.config/openbox/testwallpaper &
+sxhkd -c /home/phil/dwm-6.2d/sxhkdrc &
