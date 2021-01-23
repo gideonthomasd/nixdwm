@@ -1,43 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu>
     <menu id="root-menu" label="OpenBox 3">
-		<item label="Firefox"> <action name="Execute">
+		<item label="Firefox" icon="/home/phil/.icons/firefox.png"> <action name="Execute">
                 <execute>firefox</execute>
             </action> </item>
          
-         <item label="File Manager"> <action name="Execute">
+         <item label="File Manager" icon="/home/phil/.icons/file.png"> <action name="Execute">
                 <execute>thunar</execute>
             </action> </item>
             
-         <item label="Termite"> <action name="Execute">
+         <item label="Termite" icon="/home/phil/.icons/terminal.png"> <action name="Execute">
                 <execute>termite</execute>
             </action> </item>
             
-         <item label="Terminal(xfce4)"> <action name="Execute">
+         <item label="Terminal(xfce4)" icon="/home/phil/.icons/terminal.png"> <action name="Execute">
                 <execute>xfce4-terminal</execute>
             </action> </item>   
             
             <separator />
             
-            <item label="Brave browser"> <action name="Execute">
+            <item label="Brave browser" icon="/home/phil/.icons/brave.png"> <action name="Execute">
                 <execute>brave</execute>
             </action> </item>
             
-            <item label="Bluetooth"> <action name="Execute">
+            <item label="Bluetooth" icon="/home/phil/.icons/bluetooth.png"> <action name="Execute">
                 <execute>blueman-manager</execute>
             </action> </item>
             
-            <item label="Zoom"> <action name="Execute">
+            <item label="Zoom" icon="/home/phil/.icons/chat.png"> <action name="Execute">
                 <execute>flatpak run us.zoom.Zoom</execute>
             </action> </item>
             
-            <item label="Steam"> <action name="Execute">
+            <item label="Steam" icon="/home/phil/.icons/steam.png"> <action name="Execute">
                 <execute>flatpak run com.valvesoftware.Steam</execute>
             </action> </item>
             
             <separator />
-            <!-- Place menumaker.xml here -->
             
+            <!-- menu put here -->
+            
+            
+            <separator />
+            <menu id="40" label="OpenBox" icon="/home/phil/.icons/setting.png">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+            <separator/>
+            <item label="Exit"> <action name="Exit"/> </item>
+			</menu>
             
       </menu>
 </openbox_menu>
