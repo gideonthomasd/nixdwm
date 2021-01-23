@@ -1,0 +1,6 @@
+
+In ~/.config/openbox directory do:
+
+mmaker openbox -c -i > menumaker.xml
+
+Copy all of this and put it in menu-Top.xml and then save to menu.xml

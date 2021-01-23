@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+		<item label="Firefox"> <action name="Execute">
+                <execute>firefox</execute>
+            </action> </item>
+         
+         <item label="File Manager"> <action name="Execute">
+                <execute>thunar</execute>
+            </action> </item>
+            
+         <item label="Termite"> <action name="Execute">
+                <execute>termite</execute>
+            </action> </item>
+            
+         <item label="Terminal(xfce4)"> <action name="Execute">
+                <execute>xfce4-terminal</execute>
+            </action> </item>   
+            
+            <separator />
+            
+            <item label="Brave browser"> <action name="Execute">
+                <execute>brave</execute>
+            </action> </item>
+            
+            <item label="Bluetooth"> <action name="Execute">
+                <execute>blueman-manager</execute>
+            </action> </item>
+            
+            <item label="Zoom"> <action name="Execute">
+                <execute>flatpak run us.zoom.Zoom</execute>
+            </action> </item>
+            
+            <item label="Steam"> <action name="Execute">
+                <execute>flatpak run com.valvesoftware.Steam</execute>
+            </action> </item>
+            
+            <separator />
+            <!-- Place menumaker.xml here -->
+            
+            
+      </menu>
+</openbox_menu>
