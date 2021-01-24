@@ -67,4 +67,5 @@ cd dwm-6.2
 cp testwallpaper ~/dwm-6.2d
 cp sxhkdrc ~/dwm-6.2d
 cp killjgmenu ~/dwm-6.2d
+cp xfce4.desktop ~/dwm-6.2d
 cd ..
