@@ -3,6 +3,7 @@
 
 cd openbox
 chmod +x testwallpaper
+chmod +x mem.sh
 cd ..
 
 mkdir -p ~/.config/tint2
