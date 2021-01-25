@@ -6,4 +6,4 @@ xcompmgr &
 ~/.config/openbox/testwallpaper &
 sxhkd -c /home/phil/dwm-6.2d/sxhkdrc &
 
-~/.config/openbox/mem.sh | lemonbar -f "Roboto Medium:size=16" &
+~/.config/openbox/mem.sh | lemonbar -f "Roboto Medium:size=13" &
