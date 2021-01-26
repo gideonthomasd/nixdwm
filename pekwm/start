@@ -18,7 +18,10 @@
 # wasn't one, and I wanted to avoid that for pekwm. ;) --eyez
 
 fbpanel -p abcpekwm &
+#lxpanel &
 xcompmgr &
-plank -n dock2 &
+plank &
 ~/.pekwm/testwallpaper &
 sxhkd -c /home/phil/.pekwm/sxhkdrc &
+~/.pekwm/ram.sh
+#~/.config/openbox/mem.sh | lemonbar -f "Roboto Medium:size=14" &
