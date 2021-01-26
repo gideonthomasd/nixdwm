@@ -5,6 +5,7 @@ mkdir -p ~/.pekwm
 cd pekwm
 chmod +x testwallpaper
 chmod +x start
+chmod +x ram.sh
 cd ..
 
 cd pekwm
