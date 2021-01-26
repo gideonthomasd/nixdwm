@@ -1,17 +1,17 @@
 Global {
     #edge = left
-    edge = left
+    edge = top
     allign = center
     margin = 30
     widthtype = percent
     width = 86
-    height = 48
+    height = 28
     transparent = true
     tintcolor = #000000
     alpha = 150
     setdocktype = true
     SetPartialStrut = true
-    autohide = true
+    autohide = false
     heightWhenHidden = 12
     roundcorners = true
     roundcornersradius = 7
