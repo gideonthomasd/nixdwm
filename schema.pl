@@ -28,11 +28,14 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 
     #          COMMAND                 LABEL              ICON
+     {item => ['brave',       'Brave Web', 'brave']},
     {item => ['thunar',       'File Manager', 'system-file-manager']},
-    {item => ['xterm',            'Terminal',     'utilities-terminal']},
-    {item => ['xdg-open http://', 'Web Browser',  'web-browser']},
+    {item => ['sakura',            'Terminal',     'utilities-terminal']},
+    {item => ['firefox', 'Firefox',  'firefox']},
     {item => ['fbrun',            'Run command',  'system-run']},
-
+    {item => ['blueman-manager',            'Bluetooth',  'applications-system']},
+     {item => ['flatpak run com.valvesoftware.Steam',            'Steam',  'applications-games']},
+ {item => ['flatpak run us.zoom.Zoom',            'Zoom',  'applications-multimedia']},
     {sep => 'undef'},
 
     #          NAME            LABEL                ICON
