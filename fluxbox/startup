@@ -17,9 +17,10 @@ xmodmap "/home/phil/.Xmodmap"
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
-
+#~/.config/openbox/mem.sh | lemonbar -f "Roboto Medium:size=12" &
 fbpanel -p abc &
 ~/.fluxbox/testwallpaper &
+#xcompmgr &
 
 exec fluxbox
 # or if you want to keep a log:
