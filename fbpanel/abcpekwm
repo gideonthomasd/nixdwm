@@ -1,14 +1,14 @@
 Global {
     #edge = left
     edge = top
-    allign = center
+    allign = right
     margin = 30
     widthtype = percent
-    width = 86
+    width = 90
     height = 28
     transparent = true
-    tintcolor = #000000
-    alpha = 150
+    tintcolor = #FFFFFF
+    alpha = 28
     setdocktype = true
     SetPartialStrut = true
     autohide = false
@@ -17,7 +17,7 @@ Global {
     roundcornersradius = 7
     layer = above
     setlayer = true
-    MaxElemHeight = 44
+    MaxElemHeight = 32
 }
 
 
@@ -151,29 +151,6 @@ Plugin {
     }
 }
 
-
-
-Plugin {
-    type = taskbar
-    expand = true
-    config {
-        ShowIconified = true
-        ShowMapped    = true
-        ShowAllDesks  = false
-        tooltips = true
-        IconsOnly = false
-        MaxTaskWidth = 150
-    }
-}
-
-
-Plugin {
-    type = space
-	config {
-	   size = 15
-	}
-}
-
 Plugin {
     type = pager
     config {
@@ -196,6 +173,31 @@ Plugin {
         ShowSwap = false
     }
 }
+
+Plugin {
+    type = space
+	config {
+	   size = 15
+	}
+}
+
+Plugin {
+    type = taskbar
+    expand = true
+    config {
+        ShowIconified = true
+        ShowMapped    = true
+        ShowAllDesks  = false
+        tooltips = true
+        IconsOnly = false
+        MaxTaskWidth = 150
+    }
+}
+
+
+
+
+
 
 
 
@@ -232,12 +234,36 @@ Plugin {
 }
 
 # Digital Clock
-Plugin {
-    type = dclock
-    config {
-        ShowSeconds = false
-        HoursView = 24
-        TooltipFmt = %A %x
+#Plugin {
+#    type = dclock
+ #   config {
+ #       ShowSeconds = false
+ #       HoursView = 24
+ #       TooltipFmt = %A %x
         #Action = xmessage Please define some command &
+ #   }
+#}
+Plugin {
+	type = battery
+	}
+	
+#Plugin {
+# type = volume
+# }
+Plugin {
+    type = space
+    config {
+        size = 10
     }
+}
+
+
+Plugin {
+	type = tclock
+	config {
+		ClockFmt = %I:%M
+		TooltipFmt = %A %x
+		ShowCalendar = true
+		ShowTooltip = true
+		}
 }
