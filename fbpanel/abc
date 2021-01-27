@@ -4,7 +4,7 @@ Global {
     allign = center
     margin = 30
     widthtype = percent
-    width = 86
+    width = 99
     height = 48
     transparent = true
     tintcolor = #000000
@@ -84,6 +84,14 @@ Plugin {
 Plugin {
     type = launchbar
     config {
+		button {
+            image = /home/phil/.icons/Browser.png
+            tooltip = Brave browser
+            action = brave
+            
+        }
+		
+		
         button {
             image = /home/phil/.icons/file.png
             tooltip = File Manager
@@ -94,34 +102,42 @@ Plugin {
         button {
             image = /home/phil/.icons/terminal.png
             tooltip = Terminal
-            action = xterm
+            action = sakura
         }
-        Plugin {
-    type = space
-    config {
-        size = 30
-    }
-	}
+       
 	button {
             image = /home/phil/.icons/firefox.png
             tooltip = Firefox
             action = firefox
     	}
-		Plugin {
-    type = space
-    config {
-        size = 30
-    }
-	}
+		
 #    button {
 #            icon = terminal
 #            tooltip = termite
 #            action = termite
 #    	}
+
+button {
+            image = /home/phil/.icons/Menu.png
+            tooltip = jgmenu
+            action = ~/dwm-6.2d/killjgmenu
+    	}
     button {
             image = /home/phil/.icons/task.png
             tooltip = Task Manager
             action = lxtask
+    	}
+    	
+    button {
+            image = /home/phil/.icons/Text.png
+            tooltip = Geany
+            action = geany
+    	}
+    	
+    button {
+            image = /home/phil/.icons/Customize.png
+            tooltip = Customize
+            action = lxappearance
     	}
     }
 }
@@ -139,6 +155,36 @@ Plugin {
     config {
         image = /home/phil/.icons/window.png
         tooltip = Left click to iconify all windows. Middle click to shade them.
+    }
+}
+
+Plugin {
+    type = space
+    config {
+        size = 20
+    }
+}
+
+Plugin {
+    type = pager
+    config {
+        showwallpaper = false
+    }
+}
+
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+
+Plugin {
+    type = mem
+    expand = true
+    padding = 2
+    config {
+        ShowSwap = false
     }
 }
 
@@ -172,28 +218,7 @@ Plugin {
 	}
 }
 
-Plugin {
-    type = pager
-    config {
-        showwallpaper = false
-    }
-}
 
-Plugin {
-    type = space
-    config {
-        size = 10
-    }
-}
-
-Plugin {
-    type = mem
-    expand = true
-    padding = 2
-    config {
-        ShowSwap = false
-    }
-}
 
 
 
@@ -224,11 +249,12 @@ Plugin {
 
 # Digital Clock
 Plugin {
-    type = dclock
+    type = tclock
     config {
-        ShowSeconds = false
-        HoursView = 24
+       ClockFmt = %I:%M
         TooltipFmt = %A %x
         #Action = xmessage Please define some command &
+        ShowCalendar = true
+        ShowTooltip = true
     }
 }
