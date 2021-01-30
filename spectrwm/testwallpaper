@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+x=10
+while [ $x -gt 0 ]
+do
+#echo "Hello"
+#x=$(($x-1))
+feh --bg-scale --randomize /home/phil/Pictures/wallpapers/*
+sleep 120s
+done	
