@@ -7,3 +7,6 @@ pkill openbox
 pkill fluxbox
 pkill pekwm
 pkill xfce
+pkill awesome
+pkill xmonad
+pkill spectrwm
