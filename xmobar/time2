@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#icon=
+
+date2=$(date '+%H:%M:%S')
+
+echo $date2

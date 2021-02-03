@@ -1,0 +1,18 @@
+Config { font = "xft:terminus:size=13:antialias=true"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = TopSize L 90 17
+       , lowerOnStart = True
+       , commands = [ Run StdinReader
+                    , Run Cpu ["-L","3","-H","50","--low","green","--normal","green","--high","red"] 10
+                    , Run Com "battery" [] "battery" 10
+                    , Run Com "volume" [] "volume" 10
+                    , Run Com "dropbox" ["status"] "dropbox" 50
+                    , Run Com "mail_check" [] "mail" 50
+                    , Run Com "music" [] "music" 10
+                    , Run Date "%a %b %_d %l:%M" "date" 50
+                    ]
+       , sepChar = "&"
+       , alignSep = "}{"
+       , template = "&StdinReader& }  { <fc=orange>&date&</fc>  "
+       }

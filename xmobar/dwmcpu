@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+	  read cpu a b c previdle rest < /proc/stat
+  prevtotal=$((a+b+c+previdle))
+  sleep 0.5
+  read cpu a b c idle rest < /proc/stat
+  total=$((a+b+c+idle))
+  cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+  icon=""
+  #printf "%s %s" "$icon ""$cpu%" 
+  #echo $icon $cpu
+  #echo '#FF0000'
+  echo $cpu"%"
+  #echo $LABEL $cpu also works
+  
+  
+
+  
+  
+#label = os.environ.get("LABEL","")
+#message = "{0}<span color='{1}'>{2}</span>"
+#args = create_argparse()
+  
+  
+#print(message.format(label, args.updates_available_color, 'Hello'))
