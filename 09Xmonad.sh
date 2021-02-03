@@ -6,9 +6,11 @@ mkdir -p ~/.xmobar
 cd xmonad
 chmod +x autostart.sh
 chmod +x testwallpaper
+chmod +x xmonad.hs
 cd ..
 
 cd xmobar
+chmod +x xmobarrc
 chmod +x dwmcpu
 chmod +x dwmmail
 chmod +x mem.sh
