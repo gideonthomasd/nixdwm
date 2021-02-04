@@ -99,7 +99,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- close focused window
     , ((modm .|. shiftMask, xK_q     ), kill)
-
+	, ((modm,    xK_w     ), kill)
      -- Rotate through the available layout algorithms
     , ((modm,               xK_space ), sendMessage NextLayout)
 
@@ -159,7 +159,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm              , xK_b     ), sendMessage ToggleStruts)
     , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
     , ((0, xK_Print), spawn "scrot") -- 0 means no extra modifier key needs to be pressed in this case.
-    , ((modm, xK_F3), spawn "thunar")
+ --   , ((modm, xK_F3), spawn "thunar")
     , ((modm.|. shiftMask, xK_F3), spawn "gksu pcmanfm")
     ]
 
@@ -198,6 +198,7 @@ main = do
           -- Restart xmonad. This is the same keybinding as from i3
           , ("M-S-c", spawn "xmonad --recompile; xmonad --restart")
           , ("M-S-q", kill)
+          , ("M-w", kill)
           , ("M-'", windows W.swapMaster)
           , ("M1-<Tab>", nextMatch History (return True))
           , ("M-<Return>", spawn "termite")
