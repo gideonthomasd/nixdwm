@@ -19,3 +19,7 @@ mkdir -p ~/.config/leftwm
 cd leftwm
 cp -r * ~/.config/leftwm
 cd ..
+
+cd ~/.config/leftwm/themes
+ln -s my02-xmobar current
+cd ~
