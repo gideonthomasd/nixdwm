@@ -5,5 +5,5 @@ pkill -f sleep
 
 xcompmgr &
 
-sxhkd -c /home/phil/dwm-6.2d/sxhkdrc &
+sxhkd -c /home/phil/.config/qtile/sxhkdrc &
 /home/phil/dwm-6.2d/testwallpaper &
