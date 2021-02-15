@@ -1,4 +1,6 @@
 #Autostart file
+pkill -f testwallpaper
+pkill -f sleep
 
 tint2 &
 plank &
