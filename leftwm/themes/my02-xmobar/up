@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+pkill -f testwallpaper
+pkill -f sleep
+
 export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 
