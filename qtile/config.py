@@ -60,7 +60,7 @@ def window_to_next_group(qtile):
 keys = [
 
 # FUNCTION KEYS
-	Key([mod], "KP_Enter", lazy.spawn("termite")),
+	Key([mod], "KP_Enter", lazy.spawn("sakura")),
 	Key([mod], "w", lazy.window.kill()),
 	Key([mod, "shift"], "r", lazy.restart()),
     
