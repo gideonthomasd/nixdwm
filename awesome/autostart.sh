@@ -6,6 +6,8 @@ function run {
     $@&
   fi
 }
+run pkill -f testwallpaper
+run pkill -f sleep
 run xcompmgr
 run sxhkd -c /home/phil/dwm-6.2d/sxhkdrc &
 #run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
