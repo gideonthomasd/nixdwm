@@ -218,8 +218,11 @@ client.focused          #bf616a #cecece #000000 #FF0000 #99004C
 #focus parent
 #focus_on_window_activation none
 
+exec_always pkill -f testwallpaper
+exec_always pkill -f sleep
+
 # My commands
-exec_always lxpolkit
+#exec_always lxpolkit
 exec_always sxhkd -c /home/phil/.config/i3/sxhkdrc
 exec_always xcompmgr
 #exec_always feh --bg-scale --randomize ~/Pictures/wallpapers/*
