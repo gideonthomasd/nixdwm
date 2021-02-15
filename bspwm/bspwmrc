@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 #pgrep -x sxhkd > /dev/null || 
+pkill -f testwallpaper
+pkill -f sleep
 
 sxhkd -c /home/phil/.config/bspwm/sxhkdrc &
 
