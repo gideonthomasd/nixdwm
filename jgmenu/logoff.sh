@@ -10,3 +10,5 @@ pkill xfce
 pkill awesome
 pkill xmonad
 pkill spectrwm
+pkill qtile
+pkill leftwm
