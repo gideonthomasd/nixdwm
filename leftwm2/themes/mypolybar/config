@@ -2106,7 +2106,7 @@ format-underline = #3ecfb2
 [module/browser]
 type = custom/script
 exec = echo " "
-click-left = brave
+click-left = brave &
 format-prefix = ""
 format-prefix-foreground = #b266ff
 ## #3ecfb2
@@ -2122,7 +2122,7 @@ format-underline = ${colors.background}
 [module/file]
 type = custom/script
 exec = echo " "
-click-left = thunar
+click-left = thunar &
 format-prefix = ""
 format-prefix-foreground = #33ffff
 ## #3ecfb2
@@ -2137,7 +2137,7 @@ format-underline = ${colors.background}
 [module/terminal]
 type = custom/script
 exec = echo " "
-click-left = sakura
+click-left = sakura &
 format-prefix = ""
 format-prefix-foreground = #33ff99
 ## #3ecfb2
