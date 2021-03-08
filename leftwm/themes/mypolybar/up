@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-
+export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 pkill -f testwallpaper
 pkill -f sleep
-
-export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 
 #down the last running theme
@@ -15,6 +13,12 @@ ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
 
 #boot compton or picom if it exists
+#if [ -x "$(command -v compton)" ]; then
+#  compton &> /dev/null & 
+#elif [ -x "$(command -v picom)" ]; then
+#  picom &> /dev/null & 
+#fi
+
 xcompmgr &
 sxhkd -c /home/phil/.config/leftwm/themes/current/sxhkdrc &
 /home/phil/.config/leftwm/themes/current/testwallpaper &
@@ -29,14 +33,18 @@ if [ -x "$(command -v feh)" ]; then
   feh --bg-scale $SCRIPTPATH/background.jpg
 fi
 
+
 index=0
-leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read size
+monitor="$(polybar -m | grep +0+0 | sed s/:.*// | tac)"
+leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read -r width x y
 do 
-   leftwm-state -w $index -t $SCRIPTPATH/template.liquid | xmobar -p "$size" $SCRIPTPATH/xmobar-config.hs &
-   let index=index+1
+  barname="mainbar$index"
+  monitor=$monitor offsetx=$x width=$width polybar -c $SCRIPTPATH/polybar.config $barname &> /dev/null &
+  let index=index+1
 done
 /home/phil/.config/leftwm/themes/current/cursor.sh &
 
 
-#pkill -f xmobar
+#pkill -f polybar
 #/home/phil/.config/leftwm/themes/mypolybar/launch.sh
+

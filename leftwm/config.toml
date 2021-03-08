@@ -1,6 +1,7 @@
 modkey = "Mod4"
 workspaces = []
-tags = ["1-", "2-", "3-", "4-", "5-"]
+tags = ["1", "2", "3", "4", "5"]
+
 
 [[keybind]]
 command = "Execute"
@@ -17,7 +18,7 @@ key = "Return"
 [[keybind]]
 command = "CloseWindow"
 modifier = ["modkey"]
-key = "q"
+key = "w"
 
 [[keybind]]
 command = "SoftReload"
@@ -44,7 +45,7 @@ key = "w"
 [[keybind]]
 command = "SwapTags"
 modifier = ["modkey"]
-key = "w"
+key = "s"
 
 [[keybind]]
 command = "MoveWindowUp"
