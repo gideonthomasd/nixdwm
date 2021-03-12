@@ -187,16 +187,19 @@ gaps outer 15
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
+		
 #		position top
 #		font pango: Mononoki Nerd Font 15
-#        #status_command i3status -c /home/phil/.config/i3/i3status.conf
+        #status_command i3status -c /home/phil/.config/i3/i3status.conf
 #        status_command i3blocks -c /home/phil/.config/i3blocks/i3blocks.conf
+        #i3status | xmobar -o -t "%StdinReader%" -c "[Run StdinReader]"
 #}
 
 # My positions
 assign [class="Firefox"] $ws3
 assign [class="Brave"] $ws3
 assign [class="Geany"] $ws2
+assign [class="Termite"] $ws1
 
 smart_gaps on
 #for_window [class=".*"] border pixel 0 # (Take off border and initial window)
@@ -218,14 +221,14 @@ client.focused          #bf616a #cecece #000000 #FF0000 #99004C
 #focus parent
 #focus_on_window_activation none
 
+# My commands
 exec_always pkill -f testwallpaper
 exec_always pkill -f sleep
 
-# My commands
 #exec_always lxpolkit
 exec_always sxhkd -c /home/phil/.config/i3/sxhkdrc
 exec_always xcompmgr
 #exec_always feh --bg-scale --randomize ~/Pictures/wallpapers/*
-exec_always /home/phil/.config/i3/testwallpaper
+exec /home/phil/.config/i3/testwallpaper
 
-exec_always $HOME/.config/polybar/launch2.sh
+exec_always $HOME/.config/i3/polybar/launch.sh
