@@ -30,7 +30,7 @@ compositing-border = over
 
 ; Define fallback values used by all module formats
 format-foreground = #FF0000
-format-background = #aa00FF00
+format-background = #00FF00
 format-underline =
 format-overline =
 format-spacing =
@@ -40,7 +40,7 @@ format-offset =
 
 [colors]
 ; Nord theme ============
-background = #aa2F343F
+background = #2F343F
 foreground = #f3f4f5
 alert = #d08770
 volume-min = #a3be8c

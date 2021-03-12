@@ -13,5 +13,5 @@
 #while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
 
-    polybar mainbar-spectrwm -c $HOME/.config/polybar/config2 &
+    polybar mainbar-i3 -c $HOME/.config/polybar/config &
     
