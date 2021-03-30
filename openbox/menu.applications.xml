@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?><openbox_pipe_menu xmlns="http://openbox.org/"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://openbox.org/" ><menu id="openbox-Accessories" label="Accessories" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-accessories.svg">
+<item label="Application Finder" icon="/run/current-system/sw/share/icons/Luna/16x16/actions/edit-find.svg"><action name="Execute"><command><![CDATA[xfce4-appfinder]]></command>
+</action></item>
+<item label="balenaEtcher" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/balena-etcher-electron.svg"><action name="Execute"><command><![CDATA[etcher]]></command>
+</action></item>
+<item label="ClipIt" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/clipit-trayicon.svg"><action name="Execute"><command><![CDATA[clipit]]></command>
+</action></item>
+<item label="Files" icon="(null)"><action name="Execute"><command><![CDATA[nautilus --new-window]]></command>
+</action></item>
+<item label="Mousepad" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/accessories-text-editor.svg"><action name="Execute"><command><![CDATA[mousepad]]></command>
+</action></item>
+<item label="nitrogen" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/nitrogen.png"><action name="Execute"><command><![CDATA[nitrogen]]></command>
+</action></item>
+<item label="Plank" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/plank.svg"><action name="Execute"><command><![CDATA[plank]]></command>
+</action></item>
+<item label="Screenshot" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applets-screenshooter.svg"><action name="Execute"><command><![CDATA[xfce4-screenshooter]]></command>
+</action></item>
+<item label="Text Editor" icon="(null)"><action name="Execute"><command><![CDATA[gedit]]></command>
+</action></item>
+<item label="Xarchiver" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/xarchiver.svg"><action name="Execute"><command><![CDATA[xarchiver]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Education" label="Education" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-science.svg">
+<item label="LibreOffice 6.3 Math" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/math.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Games" label="Games" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-games.svg">
+<item label="Steam" icon="(null)"><action name="Execute"><command><![CDATA[flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam-wrapper --file-forwarding com.valvesoftware.Steam @@u  @@]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Graphics" label="Graphics" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-graphics.svg">
+<item label="Document Viewer" icon="(null)"><action name="Execute"><command><![CDATA[evince]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Draw" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/draw.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command>
+</action></item>
+<item label="Ristretto Image Viewer" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/ristretto.svg"><action name="Execute"><command><![CDATA[ristretto]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Internet" label="Internet" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-internet.svg">
+<item label="Brave Web Browser" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/brave-browser.svg"><action name="Execute"><command><![CDATA[/nix/store/q2na722frqm6k642nm8x6klql430vm9p-brave-1.17.73/bin/brave]]></command>
+</action></item>
+<item label="Chromium" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/chromium.svg"><action name="Execute"><command><![CDATA[chromium]]></command>
+</action></item>
+<item label="Firefox" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/firefox.svg"><action name="Execute"><command><![CDATA[firefox]]></command>
+</action></item>
+<item label="Steam" icon="(null)"><action name="Execute"><command><![CDATA[flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam-wrapper --file-forwarding com.valvesoftware.Steam @@u  @@]]></command>
+</action></item>
+<item label="Zoom" icon="(null)"><action name="Execute"><command><![CDATA[/nix/store/0d7i6w21d8v5hhv9jrvh1wh9n017779f-zoom-us-5.3.469451.0927/bin/zoom-us]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Office" label="Office" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-office.svg">
+<item label="Document Viewer" icon="(null)"><action name="Execute"><command><![CDATA[evince]]></command>
+</action></item>
+<item label="LibreOffice 6.3" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/startcenter.png"><action name="Execute"><command><![CDATA[libreoffice]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Base" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/base.png"><action name="Execute"><command><![CDATA[libreoffice --base]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Calc" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/calc.svg"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Draw" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/draw.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Impress" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/impress.png"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Math" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/math.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command>
+</action></item>
+<item label="LibreOffice 6.3 Writer" icon="/home/phil/.nix-profile/share/icons/hicolor/16x16/apps/writer.png"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Other" label="Other" icon="/run/current-system/sw/share/icons/Luna/16x16/actions/applications-other.svg">
+<item label="mupdf" icon="(null)"><action name="Execute"><command><![CDATA[/nix/store/x0xrym9xixjajc2153dmrhq0blvhci61-mupdf-1.18.0-bin/bin/mupdf-x11]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Development" label="Programming" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-development.svg">
+<item label="Geany" icon="/run/current-system/sw/share/icons/hicolor/16x16/apps/geany.png"><action name="Execute"><command><![CDATA[geany]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Multimedia" label="Sound &amp; Video" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-multimedia.svg">
+<item label="mpv Media Player" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/mpv.svg"><action name="Execute"><command><![CDATA[mpv --player-operation-mode=pseudo-gui --]]></command>
+</action></item>
+<item label="Parole Media Player" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/parole.svg"><action name="Execute"><command><![CDATA[parole]]></command>
+</action></item>
+<item label="PulseAudio Volume Control" icon="/run/current-system/sw/share/icons/Luna/16x16/actions/multimedia-volume-control.svg"><action name="Execute"><command><![CDATA[pavucontrol]]></command>
+</action></item>
+<item label="VLC media player" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/vlc.svg"><action name="Execute"><command><![CDATA[/nix/store/1njhf88a7df0cr3bnc1si5rb1mmd6haq-vlc-3.0.11.1/bin/vlc --started-from-file]]></command>
+</action></item>
+</menu>
+<menu id="openbox-System" label="System Tools" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/applications-system.svg">
+<item label="Bulk Rename" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/Thunar.svg"><action name="Execute"><command><![CDATA[/nix/store/sgzzr9r5d40zgxk3yfd0n8mq795jf524-thunar-1.8.15/lib/Thunar/ThunarBulkRename]]></command>
+</action></item>
+<item label="File Manager PCManFM" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/system-file-manager.svg"><action name="Execute"><command><![CDATA[pcmanfm]]></command>
+</action></item>
+<item label="GParted" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/gparted.svg"><action name="Execute"><command><![CDATA[/nix/store/4s1mhdnd6nc4qhm0fnlirmddj611jlzd-gparted-1.1.0/bin/gparted]]></command>
+</action></item>
+<item label="jgmenu" icon="/run/current-system/sw/share/icons/hicolor/scalable/apps/jgmenu.svg"><action name="Execute"><command><![CDATA[jgmenu_run]]></command>
+</action></item>
+<item label="kitty" icon="/home/phil/.nix-profile/share/icons/hicolor/256x256/apps/kitty.png"><action name="Execute"><command><![CDATA[kitty]]></command>
+</action></item>
+<item label="Manage Printing" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/cups.svg"><action name="Execute"><command><![CDATA[xdg-open http://localhost:631/]]></command>
+</action></item>
+<item label="NixOS Manual" icon="/run/current-system/sw/share/icons/hicolor/16x16/apps/nix-snowflake.png"><action name="Execute"><command><![CDATA[/nix/store/32ypd9sihrlw9w8gygvyms0bh652km30-nixos-help/bin/nixos-help]]></command>
+</action></item>
+<item label="Sakura" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/terminal-tango.svg"><action name="Execute"><command><![CDATA[sakura]]></command>
+</action></item>
+<item label="Task Manager" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/utilities-system-monitor.svg"><action name="Execute"><command><![CDATA[xfce4-taskmanager]]></command>
+</action></item>
+<item label="Task Manager" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/utilities-system-monitor.svg"><action name="Execute"><command><![CDATA[lxtask]]></command>
+</action></item>
+<item label="Termite" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/utilities-terminal.svg"><action name="Execute"><command><![CDATA[termite]]></command>
+</action></item>
+<item label="Thunar File Manager" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/Thunar.svg"><action name="Execute"><command><![CDATA[thunar]]></command>
+</action></item>
+<item label="Tint2" icon="/run/current-system/sw/share/icons/hicolor/scalable/apps/tint2.svg"><action name="Execute"><command><![CDATA[tint2]]></command>
+</action></item>
+<item label="Xfce Terminal" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/utilities-terminal.svg"><action name="Execute"><command><![CDATA[xfce4-terminal]]></command>
+</action></item>
+<item label="XTerm" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/xterm-color_48x48.svg"><action name="Execute"><command><![CDATA[xterm]]></command>
+</action></item>
+</menu>
+<separator />
+<menu id="openbox-DesktopSettings" label="Preferences" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/preferences-desktop.svg">
+<item label="Advanced Network Configuration" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/preferences-system-network.svg"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command>
+</action></item>
+<item label="Bluetooth Manager" icon="/run/current-system/sw/share/icons/Luna/16x16/panel/blueman.svg"><action name="Execute"><command><![CDATA[blueman-manager]]></command>
+</action></item>
+<item label="Customise Look and Feel" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/preferences-desktop-theme.svg"><action name="Execute"><command><![CDATA[lxappearance]]></command>
+</action></item>
+<item label="Desktop Preferences" icon="/run/current-system/sw/share/icons/Luna/scalable/places/user-desktop.svg"><action name="Execute"><command><![CDATA[pcmanfm --desktop-pref]]></command>
+</action></item>
+<item label="File Manager Settings" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/system-file-manager.svg"><action name="Execute"><command><![CDATA[thunar-settings]]></command>
+</action></item>
+<item label="NVIDIA X Server Settings" icon="/run/current-system/sw/share/icons/hicolor/128x128/apps/nvidia-settings.png"><action name="Execute"><command><![CDATA[nvidia-settings]]></command>
+</action></item>
+<item label="Openbox Configuration Manager" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/obconf.svg"><action name="Execute"><command><![CDATA[obconf]]></command>
+</action></item>
+<item label="Panel Manager" icon="/run/current-system/sw/share/icons/hicolor/scalable/apps/tint2conf.svg"><action name="Execute"><command><![CDATA[tint2conf]]></command>
+</action></item>
+<item label="Power Manager" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/xfce4-power-manager-settings.svg"><action name="Execute"><command><![CDATA[xfce4-power-manager-settings]]></command>
+</action></item>
+<item label="Removable Drives and Media" icon="/run/current-system/sw/share/icons/Luna/scalable/devices/drive-removable-media.svg"><action name="Execute"><command><![CDATA[thunar-volman-settings]]></command>
+</action></item>
+<item label="Xfce Terminal" icon="/run/current-system/sw/share/icons/Luna/scalable/apps/utilities-terminal.svg"><action name="Execute"><command><![CDATA[xfce4-terminal --preferences]]></command>
+</action></item>
+</menu>
+</openbox_pipe_menu>
