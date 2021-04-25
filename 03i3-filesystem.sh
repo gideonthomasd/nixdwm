@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+cp powermenu.sh ~/powermenu.sh
+
 cd i3blocks
 chmod +x bandwidth
 chmod +x cpu-usage
