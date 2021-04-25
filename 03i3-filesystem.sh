@@ -7,6 +7,7 @@ chmod +x dwmmail
 chmod +x dwm_resources.sh
 chmod +x dwmweather
 chmod +x time
+chmod +x timeonly.sh
 
 cd ..
 
