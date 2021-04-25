@@ -16,7 +16,8 @@ set $mod Mod4
 #font pango: Mononoki Nerd Font 10
 #font pango: Mononoki Nerd Font 15
 #monospace 8
-
+exec_always pkill -f testwallpaper
+exec_always pkill -f sleep
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 8
@@ -43,7 +44,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal #altered
-bindsym $mod+Return exec termite 
+bindsym $mod+Return exec sakura 
 
 
 # kill focused window #altered
@@ -186,23 +187,28 @@ gaps outer 15
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#		position top
-#		font pango: Mononoki Nerd Font 15
+bar {
+		position top
+		font pango: Mononoki Nerd Font 13
 #        #status_command i3status -c /home/phil/.config/i3/i3status.conf
-#        status_command i3blocks -c /home/phil/.config/i3blocks/i3blocks.conf
-#}
+        status_command i3blocks -c /home/phil/.config/i3blocks/i3blocks.conf
+}
 
 # My positions
 assign [class="Firefox"] $ws3
 assign [class="Brave"] $ws3
 assign [class="Geany"] $ws2
 
+####Focus on new window if on different screen
+for_window [class=Geany] focus
+for_window [class=Brave] focus
+
 smart_gaps on
 #for_window [class=".*"] border pixel 0 # (Take off border and initial window)
 #client.focused #FFFF00 #FFFF00 #ffffff #2e9ef4 #285577
 ########### Takes off title but puts border
 new_window pixel 3
+######################################### Necessary for Tabbed Mode####################
 workspace_layout tabbed
 
 # class                 border  backgr. text    indicator child_border                                                                     
@@ -218,8 +224,7 @@ client.focused          #bf616a #cecece #000000 #FF0000 #99004C
 #focus parent
 #focus_on_window_activation none
 
-exec_always pkill -f testwallpaper
-exec_always pkill -f sleep
+
 
 # My commands
 #exec_always lxpolkit
@@ -228,4 +233,4 @@ exec_always xcompmgr
 #exec_always feh --bg-scale --randomize ~/Pictures/wallpapers/*
 exec_always /home/phil/.config/i3/testwallpaper
 
-exec_always $HOME/.config/polybar/launch2.sh
+#exec_always $HOME/.config/polybar/launch2.sh
