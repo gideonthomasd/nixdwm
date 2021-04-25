@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-icon=
+#icon=
 
-date=$(date '+%d-%m-%Y ')
+date=$(date '+ %H:%M')
 #$(date '+%d-%m-%Y %H:%M:%S')
 
-echo $icon $date 
+echo $date
