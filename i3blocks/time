@@ -2,6 +2,7 @@
 
 icon=
 
-date=$(date '+%d-%m-%Y %H:%M:%S')
+date=$(date '+%d-%m-%Y %H:%M')
+#$(date '+%d-%m-%Y %H:%M:%S')
 
-echo $icon $date
+echo $icon $date " "
