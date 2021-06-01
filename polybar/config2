@@ -2118,12 +2118,12 @@ format-foreground = #9999FF
 format-background = ${colors.background}
 format-underline = #FFFF00
 
-format-prefix = ""
+format-prefix = ""
 format-prefix-foreground = #FFFF00
 format-prefix-background = ${colors.background}
 format-prefix-underline = #FFFF00
 
-click-left = gsimplecal &
+click-left = ~/powermenu.sh &
 #2F343F
 [module/my_mail]
 type = custom/script
