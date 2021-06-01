@@ -35,13 +35,13 @@ super + F5
 	blueman-manager
 	
 super + x
-	arcolinux-logout
+	~/powermenu.sh
 
 F9
   brave
 
 F10
-	~/dwm-6.2d/killjgmenu
+	~/.config/bspwm/killjgmenu
 F11
         xfce4-terminal --drop-down
 	
@@ -159,7 +159,7 @@ super + alt + shift + {h,j,k,l}
 #	bspc node -v {-20 0,0 20,0 -20,20 0}
 # MINE #############################################
 ~button2
-	~/dwm-6.2d/killjgmenu
+	~/.config/bspwm/killjgmenu
 	
 # Move window and move with it
 #alt + super + Right
