@@ -1,6 +1,6 @@
 [bar]
 name = "testbar"
-blocks = "desktop cpu | mail ram weather | switch date time"
+blocks = "desktop  | offswitch ram weather | switch date time"
 height = 32
 areas = 16
 foreground = "#FFFF99"
@@ -8,10 +8,12 @@ background = "#000000"
 line-color = "#555555"
 # "#555555"
 line-width = 2
-font = "Monospace:size=14"
-#affix-font = "Font Awesome 5 Free-Solid:size=16"
+font = "Monospace:size=13"
+affix-font = "Font Awesome 5 Brands:size=16"
+#"Font Awesome 5 Free-Solid:size=16"
 #affix-font = "Font Awesome 5 Brands-Regular:size=16"
-affix-font = "Font Awesome 5 Free-Regular:size=16"
+#affix-font = "FontAwesome:size=16"
+#"Font Awesome 5 Free-Regular:size=16"
 
 [default]
 label-foreground = "#dddddd"
@@ -40,21 +42,25 @@ label = "USER"
 [date]
 command = "date +'%d-%m-%Y'"
 interval = 100
-label = " "
+label = " "
+label-foreground = "#3399ff"
+#" "
 
 [time]
 label-foreground = "#ff99CC"
 foreground = "#99FF99"
 command = "date +'%H:%M:%S'"
 interval = 1
-label = " "
+label = " "
+#" "
 mouse-left = "xclock"
 margin-right = 8
 
 [ram]
 command = ~/.config/succade/mem.sh
 interval = 2
-label = " "
+label = " "
+label-foreground = "#cc99ff"
 
 [cpu]
 label-foreground = "#CC99FF"
@@ -75,12 +81,18 @@ label-foreground = "#ff99CC"
 foreground = "#99CCFF"
 command = ~/.config/succade/weather
 interval = 900
-label = " "
+label = " "
 
 [switch]
-command = echo ""
+command = echo ""
+#echo ""
 foreground = "#99FF99"
 mouse-left = ~/.config/succade/windows
+
+[offswitch]
+command = echo ""
+foreground = "#99CCFF"
+mouse-left = ~/powermenu.sh
 
 [mail]
 label-foreground = "#99FF99"
