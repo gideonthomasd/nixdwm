@@ -30,6 +30,12 @@ then
 elif [ "$selected_option" == "$logout" ]
 then
     pkill i3
+    pkill spectrwm
+    pkill bspwm
+    pkill dwm
+    pkill openbox
+    pkill pekwm
+    
 elif [ "$selected_option" == "$shutdown" ]
 then
     systemctl poweroff
