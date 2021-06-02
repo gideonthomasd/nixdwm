@@ -67,7 +67,7 @@ Plugin {
             item {
                 name = logout
                 icon = gnome-session-logout
-                action = /usr/lib/fbpanel/xlogout
+                action = pkill fluxbox
             }
         }
     }
