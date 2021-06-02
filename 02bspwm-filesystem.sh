@@ -4,6 +4,7 @@ cd bspwm
 chmod +x bspwmrc
 chmod +x testwallpaper
 chmod +x sta
+chmod +x cursor.sh
 cd ..
 
 cd succade
