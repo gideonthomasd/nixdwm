@@ -35,7 +35,7 @@ super + F5
 	blueman-manager
 	
 super + x
-	arcolinux-logout
+	~/powermenu.sh
 
 F9
   brave
