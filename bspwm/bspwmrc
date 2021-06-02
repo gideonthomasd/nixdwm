@@ -22,6 +22,8 @@ xcompmgr -c &
 #~/.config/bspwm/launch.sh
 ~/.local/bin/succade &
 ~/.config/bspwm/sta &
+
+~/.config/bspwm/cursor.sh &
 bspc monitor -d I II III IV V
 
 bspc config border_width         2
