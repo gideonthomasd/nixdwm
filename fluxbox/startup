@@ -23,7 +23,7 @@ pkill -f sleep
 fbpanel -p abc &
 ~/.fluxbox/testwallpaper &
 #xcompmgr &
-
+sxhkd -c /home/phil/.pekwm/sxhkdrc &
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/phil/.fluxbox/log"
