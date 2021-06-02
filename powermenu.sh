@@ -35,6 +35,7 @@ then
     pkill dwm
     pkill openbox
     pkill pekwm
+    pkill fluxbox
     
 elif [ "$selected_option" == "$shutdown" ]
 then
