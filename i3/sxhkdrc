@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	termite
+	sakura 
 # For transparency do yay -S ....
 # program launcher
 super + p
@@ -13,9 +13,9 @@ super + p
 ctrl + g
 	geany
 	
-super + v
+ctrl + v
 	pavucontrol
-
+	
 super + d
         doublecmd
 	
@@ -48,6 +48,10 @@ F11
 	
 F12
 	thunar
+	
+ctrl + Right
+	feh --bg-scale --randomize ~/Pictures/wallpapers/*
+
 
 # make sxhkd reload its configuration files:
 super + Escape
