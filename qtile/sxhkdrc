@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	sakura
+	lxterminal
 # For transparency do yay -S ....
 # program launcher
-#super + p
-	#dmenu_run -fn 'Noto Sans-15'
+super + p
+	dmenu_run -fn 'Noto Sans-15'
 
 ctrl + g
 	geany
@@ -35,7 +35,7 @@ super + F5
 	blueman-manager
 	
 super + x
-	arcolinux-logout
+	~/powermenu.sh
 F8
 	rofi -mode window -show window -hide-scrollbar -pading 20 -live-padding 4 -width 40 -lines 6
 
