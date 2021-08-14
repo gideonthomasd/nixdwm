@@ -17,6 +17,16 @@ chmod +x windows
 
 cd ..
 
+cd bspwm
+cd polybar-bspwm
+chmod +x *.sh
+cd scripts
+chmod +x *.sh
+
+cd ..
+cd ..
+cd ..
+
 
 
 
