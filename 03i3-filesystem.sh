@@ -31,3 +31,7 @@ cd i3blocks
 cp -r * ~/.config/i3blocks
 cd ..
 
+mkdir -p ~/.config/lxterminal
+cd lxterminal
+cp -r * ~/.config/lxterminal
+cd ..
