@@ -47,6 +47,9 @@ F11
 	
 F12
 	thunar
+	
+ctrl + Right
+	feh --bg-scale --randomize ~/Pictures/wallpapers/*
 
 # make sxhkd reload its configuration files:
 super + Escape

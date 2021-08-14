@@ -17,14 +17,20 @@ setxkbmap gb &
 #lxpolkit &
 xcompmgr -c &
 
-#$HOME/.config/polybar/launch.sh
+$HOME/.config/bspwm/polybar-bspwm/launch.sh
+
+################################Together####
+#~/.config/bspwm/sta &
+#~/.local/bin/succade &
+############################################
+
 ######PATH not set yet############
-#~/.config/bspwm/launch.sh
-~/.local/bin/succade &
-~/.config/bspwm/sta &
+#~/.config/bspwm/launch.sh NOT USED
+
+
 
 ~/.config/bspwm/cursor.sh &
-bspc monitor -d I II III IV V
+bspc monitor -d I II III IV V VI
 
 bspc config border_width         2
 bspc config window_gap          8
