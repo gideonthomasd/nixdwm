@@ -17,7 +17,7 @@ setxkbmap gb &
 #lxpolkit &
 xcompmgr -c &
 
-$HOME/.config/bspwm/polybar-bspwm/launch.sh
+$HOME/.config/bspwm/polybar-bspwm/launch.sh &
 
 ################################Together####
 #~/.config/bspwm/sta &
