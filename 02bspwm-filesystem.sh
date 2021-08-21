@@ -5,6 +5,7 @@ chmod +x bspwmrc
 chmod +x testwallpaper
 chmod +x sta
 chmod +x cursor.sh
+chmod +x killjgmenu.sh
 cd ..
 
 cd succade
