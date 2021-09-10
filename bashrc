@@ -155,8 +155,11 @@ eval "`dircolors -b $DIR_COLORS`"
 alias t='devour thunar'
 alias p='devour pcmanfm'
 alias l='devour lxtask'
-alias vlc='devour vlc'
+#alias vlc='devour vlc'
 alias m='devour mpv'
+
+alias mp3y="youtube-dl -x --audio-format mp3 --prefer-ffmpeg "
+alias y="youtube-dl "
 
 alias update="sudo timeshift --check && sudo pacman -Syyu"
 ## n nixos.firefox
