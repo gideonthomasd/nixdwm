@@ -5,7 +5,7 @@ mkdir -p ~/.config/xmobar
 
 cd xmonad
 chmod +x autostart.sh
-chmod +x testwallpaper
+#chmod +x testwallpaper
 chmod +x xmonad.hs
 cd ..
 
