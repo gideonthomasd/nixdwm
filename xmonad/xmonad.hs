@@ -393,7 +393,7 @@ myKeys =
         , ("M-S-a", killAll)   -- Kill all windows on current workspace
         , ("<F12>", spawn "thunar" )
         , ("<F9>", spawn "brave" )
-        , ("<F10>", spawn "~/.config/bspwm/killjgmenu")
+        , ("<F10>", spawn "~/.config/bspwm/killjgmenu.sh")
         , ("M-x", spawn "~/powermenu.sh" )
         , ("M-<F1>", spawn "firefox" )
         , ("M-<F2>", spawn "pcmanfm" )
