@@ -1,13 +1,13 @@
 Config { 
 
    -- appearance
-     font =         "xft:font Awesome 5 free Solid:style=solid:size=15, font Awesome 5 Brands:size=15, Roboto:size=14"
+     font =         "xft:font Awesome 5 free Solid:style=solid:size=12, font Awesome 5 Brands:size=11, Roboto:size=13"
      --Bitstream Vera Sans Mono:size=13:bold:antialias=true"
    , bgColor =      "#202020"
    --"black"
    , fgColor =      "#CC99FF"
    --"#646464"
-   , position =     Top
+   , position =     Bottom
    , border =       BottomB
    , borderColor =  "#FF99FF"
    --"#646464"
@@ -15,7 +15,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%UnsafeStdinReader% } { <fc=#80ff84><action=`rofi -mode window -show window -hide-scrollbar -pading 20 -live-padding 4 -width 40 -lines 6`>%rofi%</action>  </fc> <fc=#ff007f><action=mocp -G>%moc%</action> </fc> <fc=#9999FF>  </fc><fc=#FFFF99><action=`lxterminal -e htop`>%memory%</action></fc> <fc=#CC99FF>  </fc><fc=#66FFFF><action=`lxterminal -e 'curl wttr.in/Caerphilly && read'`>%myweather%</action></fc>  <fc=#FF9999> </fc> <fc=#FFFFFF><action=`gsimplecal`>%time%</action></fc><fc=#ffff99> %mytime%</fc>       "
+   , template = "<fc=#FF99CC> </fc><fc=#CCCCFF>%cpu1%</fc> | <fc=#9999FF> </fc><fc=#FFFF99>%memory%</fc> | <fc=#66FF66> </fc>%mail% } {<fc=#CC99FF> </fc><fc=#66FFFF>%myweather%</fc> | <fc=#FFFF99> %dynnetwork%</fc> | <fc=#FF0000> </fc> <fc=#FFFFFF>%time%</fc><fc=#66FFFF> %mytime%</fc> "
 
    -- general behavior Unsafe
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -89,15 +89,13 @@ Config {
           --                   , "--high"     , "darkred"
           --                   ] 10
                              
-        , Run Com "/home/phil/.config/xmobar/mem.sh" [] "memory" 20	
-        , Run Com "/home/phil/.config/xmobar/dwmcpu.sh" [] "cpu1" 20	
-        , Run Com "/home/phil/.config/xmobar/dwmmail.sh" [] "mail" 3000
-        , Run Com "/home/phil/.config/xmobar/updates.sh" [] "updates" 6000
-        , Run Com "/home/phil/.config/xmobar/time.sh" [] "time" 60
-        , Run Com "/home/phil/.config/xmobar/time2.sh" [] "mytime" 10
-        , Run Com "/home/phil/.config/xmobar/weather.sh" [] "myweather" 3000
-        , Run Com "/home/phil/.config/xmobar/rofiwindow.sh" [] "rofi" 3000000
-        , Run Com "/home/phil/.config/xmobar/moc.sh" [] "moc" 10
+        , Run Com "/home/phil/.xmobar/mem.sh" [] "memory" 20	
+        , Run Com "/home/phil/.xmobar/dwmcpu" [] "cpu1" 20	
+        , Run Com "/home/phil/.xmobar/dwmmail" [] "mail" 3000
+        , Run Com "/home/phil/.xmobar/updates" [] "updates" 6000
+        , Run Com "/home/phil/.xmobar/time" [] "time" 60
+        , Run Com "/home/phil/.xmobar/time2" [] "mytime" 10
+        , Run Com "/home/phil/.xmobar/weather" [] "myweather" 3000
 
         -- battery monitor
         , Run Battery        [ "--template" , "Batt: <acstatus>"
