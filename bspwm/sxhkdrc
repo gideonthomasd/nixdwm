@@ -8,8 +8,8 @@ super + Return
 # For transparency do yay -S ....
 # program launcher
 super + p
-	dmenu_run -fn "Ubuntu Monospace-16" -p 'Run: '
-#-i -p \"Run: \"
+	dmenu_run -fn "Ubuntu Monospace-16" -sb '#990000' -sf '#FFFF66' -p 'Run: '
+# -i -p \"Run: \"
 
 ctrl + g
 	geany
