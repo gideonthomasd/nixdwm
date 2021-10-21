@@ -23,3 +23,4 @@ cd xmobar
 cp -r * ~/.config/xmobar
 cd ..
 
+xmonad --recompile
