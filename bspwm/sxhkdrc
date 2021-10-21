@@ -41,7 +41,7 @@ F9
   brave
 
 F10
-	~/.config/bspwm/killjgmenu.sh
+	~/.config/bspwm/killjgmenu
 F11
         xfce4-terminal --drop-down
 	
@@ -54,6 +54,9 @@ ctrl + Right
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+	
+ctrl + shift + m
+	lxterminal -e mocp
 
 #
 # bspwm hotkeys
@@ -98,11 +101,6 @@ super + ctrl + {m,x,y,z}
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
-	
-
-super + {Left,Down,Up,Right}
-	bspc node -s {west,south,north,east}
-
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -121,7 +119,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
- uper + {o,i}
+super + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
@@ -137,6 +135,9 @@ super + {_,shift + }{1-9,0}
 # preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
+	
+super + {Left,Down,Up,Right}
+	bspc node -s {west,south,north,east}
 
 # preselect the ratio
 super + ctrl + {1-9}
@@ -167,7 +168,7 @@ super + alt + shift + {h,j,k,l}
 #	bspc node -v {-20 0,0 20,0 -20,20 0}
 # MINE #############################################
 ~button2
-	~/.config/bspwm/killjgmenu.sh
+	~/.config/bspwm/killjgmenu
 	
 # Move window and move with it
 #alt + super + Right
