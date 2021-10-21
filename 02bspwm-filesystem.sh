@@ -9,6 +9,7 @@ chmod +x killjgmenu.sh
 cd ..
 
 cd succade
+chmod +x *.sh
 chmod +x dwmcpu
 chmod +x dwmmail
 chmod +x mem.sh
