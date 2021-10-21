@@ -1,15 +1,18 @@
 [bar]
 name = "testbar"
-blocks = "desktop  | offswitch ram weather | switch date time"
+blocks = "desktop windownumber  | mocp ram weather | switch date time"
 height = 32
 areas = 16
 foreground = "#FFFF99"
 background = "#000000"
 line-color = "#555555"
 # "#555555"
-line-width = 2
-font = "Monospace:size=13"
-affix-font = "Font Awesome 5 Brands:size=16"
+line-width = 1
+#font = "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+font = "Ubuntu Monospace:size=13"
+affix-font = "Font Awesome 5 Free-Solid:size=16"
+#affix-font = "Mononoki Nerd Font:size=15"
+#affix-font = "Font Awesome 5 Brands:size=16"
 #"Font Awesome 5 Free-Solid:size=16"
 #affix-font = "Font Awesome 5 Brands-Regular:size=16"
 #affix-font = "FontAwesome:size=16"
@@ -19,7 +22,7 @@ affix-font = "Font Awesome 5 Brands:size=16"
 label-foreground = "#dddddd"
 affix-foreground = "#777777"
 #"#555555"
-margin = 8
+margin = 18
 padding-left = 1
 prefix = "[ " 
 suffix = " ]"
@@ -27,7 +30,7 @@ underline = true
 
 [desktop]
 label-foreground = "#ff99CC"
-font = "Cantarell:size=16"
+font = "Ubuntu Monospace:size=16"
 command = "bspc query -D -d focused --names"
 trigger = "bspc subscribe"
 label = "WORKSPACE "
@@ -40,9 +43,9 @@ command = "whoami"
 label = "USER"
 
 [date]
-command = "date +'%d-%m-%Y'"
+command = "date +'%d-%m'"
 interval = 100
-label = " "
+label = " "
 label-foreground = "#3399ff"
 #" "
 
@@ -51,21 +54,23 @@ label-foreground = "#ff99CC"
 foreground = "#99FF99"
 command = "date +'%H:%M:%S'"
 interval = 1
-label = " "
+label = " "
 #" "
-mouse-left = "xclock"
-margin-right = 8
+#mouse-left = "xclock"
+#margin-right = 8
 
 [ram]
 command = ~/.config/succade/mem.sh
 interval = 2
-label = " "
+label = " "
+#label = " "
 label-foreground = "#cc99ff"
+mouse-left = lxterminal -e htop
 
 [cpu]
 label-foreground = "#CC99FF"
 foreground = "#FF9999"
-command = ~/.config/succade/dwmcpu
+command = ~/.config/succade/dwmcpu.sh
 interval = 2
 label = " "
 
@@ -73,30 +78,47 @@ label = " "
 [update]
 label = " "
 foreground = "#CC99FF"
-command = ~/.config/succade/updates
+command = ~/.config/succade/updates.sh
 interval = 300
 
 [weather]
 label-foreground = "#ff99CC"
 foreground = "#99CCFF"
-command = ~/.config/succade/weather
+command = ~/.config/succade/weather.sh
+mouse-left = lxterminal -e 'curl wttr.in/Caerphilly && read'
 interval = 900
-label = " "
+label = " "
 
 [switch]
-command = echo ""
+command = echo ""
 #echo ""
 foreground = "#99FF99"
-mouse-left = ~/.config/succade/windows
+mouse-left = ~/.config/succade/windows.sh
 
 [offswitch]
-command = echo ""
+command = echo ""
 foreground = "#99CCFF"
 mouse-left = ~/powermenu.sh
 
 [mail]
 label-foreground = "#99FF99"
-command = ~/.config/succade/dwmmail
+command = ~/.config/succade/dwmmail.sh
 interval = 300
 label = " "
 
+[mocp]
+label = " "
+label-foreground = "#ff99CC"
+foreground = "#99CCFF"
+command = ~/.config/succade/mocp.sh
+interval = 1
+mouse-left = mocp -G
+
+[windownumber]
+#label = "   "
+label = ""
+label-foreground = "#5599ff"
+foreground = "#99FF99"
+command = ~/.config/succade/window-number.sh
+interval = 1
+mouse-left = bspc node -f next.local.window
