@@ -42,7 +42,7 @@ F9
   brave
 
 F10
-	~/.config/bspwm/killjgmenu
+	~/.config/bspwm/killjgmenu.sh
 F11
         xfce4-terminal --drop-down
 	
@@ -169,7 +169,7 @@ super + alt + shift + {h,j,k,l}
 #	bspc node -v {-20 0,0 20,0 -20,20 0}
 # MINE #############################################
 ~button2
-	~/.config/bspwm/killjgmenu
+	~/.config/bspwm/killjgmenu.sh
 	
 # Move window and move with it
 #alt + super + Right
