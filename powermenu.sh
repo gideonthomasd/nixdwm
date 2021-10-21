@@ -37,6 +37,7 @@ then
     pkill pekwm
     pkill fluxbox
     pkill qtile
+    pkill xmonad
     
 elif [ "$selected_option" == "$shutdown" ]
 then
