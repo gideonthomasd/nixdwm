@@ -3,6 +3,7 @@
 cp powermenu.sh ~/powermenu.sh
 
 cd i3blocks
+chmod +x *.sh
 chmod +x bandwidth
 chmod +x cpu-usage
 chmod +x dwmcpu
