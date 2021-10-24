@@ -51,7 +51,7 @@ bindsym $mod+Return exec sakura
 bindsym $mod+w kill
 
 # start dmenu (a program launcher) #altered
-bindsym $mod+p exec dmenu_run
+bindsym $mod+p exec dmenu_run -fn "Ubuntu Monospace-16" -sb '#990000' -sf '#FFFF66' -p 'Run: '
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -233,5 +233,6 @@ exec_always sxhkd -c /home/phil/.config/i3/sxhkdrc
 exec_always xcompmgr
 #exec_always feh --bg-scale --randomize ~/Pictures/wallpapers/*
 exec_always /home/phil/.config/i3/testwallpaper
-
+exec_always volumeicon 
+exec_always nm-applet
 #exec_always $HOME/.config/polybar/launch2.sh
